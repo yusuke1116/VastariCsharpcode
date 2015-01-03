@@ -676,7 +676,7 @@ C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\obj\Debug\PhoneApp2.csproj.Genera
 C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\obj\Debug\PhoneApp2.dll
 C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\obj\Debug\PhoneApp2.pdb
 C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\obj\Debug\XapCacheFile.xml
-C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\obj\Debug\PhoneApp2.csprojResolveAssemblyReference.cache
 C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\obj\Debug\Camera.g.cs
 C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\obj\Debug\Camera2.g.cs
 C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\obj\Debug\UploadPhoto.g.cs
+C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\obj\Debug\PhoneApp2.csprojResolveAssemblyReference.cache

@@ -1,6 +1,12 @@
 ﻿<configuration>
     <system.serviceModel>
         <bindings />
-        <client />
+        <client>
+          <endpoint address="http://vastarinewvm.cloudapp.net/VastariAPIService.svc"
+                    binding="basicHttpBinding" 
+                    bindingConfiguration="WebService"
+                    contract="VastariAPI.VastariAPIServiceClient"
+                    name="WebServiceEndpoint" />
+        </client>
     </system.serviceModel>
 </configuration>

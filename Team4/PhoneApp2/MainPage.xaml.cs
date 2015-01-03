@@ -13,6 +13,8 @@ using System.IO;
 using System.ServiceModel;
 using System.Runtime.Serialization.Json;
 using System.Xml;
+using PhoneApp2.VastariAPI;
+
 
 
 namespace PhoneApp2
@@ -54,26 +56,9 @@ namespace PhoneApp2
                 try
                 {
 
-                    //11/12 API test
-
-                    //VastariAPI.Service1Client client = new VastariAPI.Service1Client();
-                    //client.LoginAsync(UsrName.Text, PswdBox.Password);
-                    
-
-                    //Test method
-                    //clients.GetDataAsync("ABC");
-
-                    //Login method
-                   
-                    //clients.LoginAsync(UsrName.Text, PswdBox.Password);
-
-                    // 08/12 API test
-                    //client.LoginAsync(UsrName.Text, PswdBox.Password);
-                    //client.GetDataAsync();
-                    //DataContractJsonSerializer serializer = new DataContractJsonSerializer(typeof(VS_Login));
-                    // VS_Login VSlogin   = (VSlogin)serializer.ReadObject(RES
-
-
+                    VastariAPIServiceClient client = new VastariAPI.VastariAPIServiceClient("http://vastarinewvm.cloudapp.net/VastariAPIService.svc");
+                    client.LoginAsync(UsrName.Text, PswdBox.Password);
+                    client.LoginCompleted += new EventHandler<VastariAPI.LoginCompletedEventArgs>(clients_login_done);
 
                     using (IsolatedStorageFile isoStorage = IsolatedStorageFile.GetUserStoreForApplication())
                     {
@@ -82,13 +67,7 @@ namespace PhoneApp2
                             NavigationService.Navigate(new Uri("/Login.xaml", UriKind.Relative));
                         }
                     }
-                    //IsolatedStorageFileStream stream = isoStorage.OpenFile("pincode", FileMode.Open);
-                    //StreamReader sr = new StreamReader(stream, System.Text.Encoding.UTF8);
-                    //line = sr.ReadLine();
-                    //if (line== null)
-                    //{
-                    //    NavigationService.Navigate(new Uri("/PinCode.xaml", UriKind.Relative));
-                    //}
+     
                 }
                 catch (IsolatedStorageException)
                 {
@@ -108,6 +87,13 @@ namespace PhoneApp2
 
             //MessageBox.Show("SET PINCODE","Please set a 4 digit pincode. *You will be asked to enter the code each time you re-open the app",MessageBoxButton.OK);
            
+        }
+        //void clients_login_done(object sender, PhoneApp2.ServiceReference1.LoginCompletedEventArgs e)
+        void clients_login_done(object sender, VastariAPI.LoginCompletedEventArgs e)
+        {
+            // Write message.
+            MessageBox.Show("login success!");
+
         }
 
         void rtnJSON_DownloadStringCompleted(object sender, DownloadStringCompletedEventArgs e)
