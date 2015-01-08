@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="VastariAPIService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://vastarinewvm.cloudapp.net/VastariAPIService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://vastarinewvm.cloudapp.net/VastariAPIService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://vastarinewvm.cloudapp.net/VastariAPIService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WCFService" />
+      <xsd:import schemaLocation="http://vastarinewvm.cloudapp.net/VastariAPIService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Vastari.Services.Api.Entities" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IVastariAPIService_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="IVastariAPIService_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVastariAPIService_PrivateUserRegistration_InputMessage">
+    <wsdl:part name="parameters" element="tns:PrivateUserRegistration" />
+  </wsdl:message>
+  <wsdl:message name="IVastariAPIService_PrivateUserRegistration_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PrivateUserRegistrationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVastariAPIService_InstitutionalUserRegistration_InputMessage">
+    <wsdl:part name="parameters" element="tns:InstitutionalUserRegistration" />
+  </wsdl:message>
+  <wsdl:message name="IVastariAPIService_InstitutionalUserRegistration_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InstitutionalUserRegistrationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVastariAPIService_UploadObject_InputMessage">
+    <wsdl:part name="parameters" element="tns:UploadObject" />
+  </wsdl:message>
+  <wsdl:message name="IVastariAPIService_UploadObject_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UploadObjectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVastariAPIService_GetObjectDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetObjectDetail" />
+  </wsdl:message>
+  <wsdl:message name="IVastariAPIService_GetObjectDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetObjectDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVastariAPIService_UpdateObjectImages_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateObjectImages" />
+  </wsdl:message>
+  <wsdl:message name="IVastariAPIService_UpdateObjectImages_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateObjectImagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVastariAPIService_GetCategories_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCategories" />
+  </wsdl:message>
+  <wsdl:message name="IVastariAPIService_GetCategories_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCategoriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVastariAPIService_GetSubCategories_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubCategories" />
+  </wsdl:message>
+  <wsdl:message name="IVastariAPIService_GetSubCategories_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubCategoriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVastariAPIService_GetArtistById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetArtistById" />
+  </wsdl:message>
+  <wsdl:message name="IVastariAPIService_GetArtistById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetArtistByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVastariAPIService_GetAllArtists_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllArtists" />
+  </wsdl:message>
+  <wsdl:message name="IVastariAPIService_GetAllArtists_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllArtistsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVastariAPIService_GetInboxMessages_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInboxMessages" />
+  </wsdl:message>
+  <wsdl:message name="IVastariAPIService_GetInboxMessages_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInboxMessagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVastariAPIService_GetSentMessages_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSentMessages" />
+  </wsdl:message>
+  <wsdl:message name="IVastariAPIService_GetSentMessages_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSentMessagesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IVastariAPIService">
+    <wsdl:operation name="Login">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVastariAPIService/Login" message="tns:IVastariAPIService_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVastariAPIService/LoginResponse" message="tns:IVastariAPIService_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PrivateUserRegistration">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVastariAPIService/PrivateUserRegistration" message="tns:IVastariAPIService_PrivateUserRegistration_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVastariAPIService/PrivateUserRegistrationResponse" message="tns:IVastariAPIService_PrivateUserRegistration_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InstitutionalUserRegistration">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVastariAPIService/InstitutionalUserRegistration" message="tns:IVastariAPIService_InstitutionalUserRegistration_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVastariAPIService/InstitutionalUserRegistrationResponse" message="tns:IVastariAPIService_InstitutionalUserRegistration_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadObject">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVastariAPIService/UploadObject" message="tns:IVastariAPIService_UploadObject_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVastariAPIService/UploadObjectResponse" message="tns:IVastariAPIService_UploadObject_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetObjectDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVastariAPIService/GetObjectDetail" message="tns:IVastariAPIService_GetObjectDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVastariAPIService/GetObjectDetailResponse" message="tns:IVastariAPIService_GetObjectDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateObjectImages">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVastariAPIService/UpdateObjectImages" message="tns:IVastariAPIService_UpdateObjectImages_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVastariAPIService/UpdateObjectImagesResponse" message="tns:IVastariAPIService_UpdateObjectImages_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCategories">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVastariAPIService/GetCategories" message="tns:IVastariAPIService_GetCategories_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVastariAPIService/GetCategoriesResponse" message="tns:IVastariAPIService_GetCategories_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubCategories">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVastariAPIService/GetSubCategories" message="tns:IVastariAPIService_GetSubCategories_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVastariAPIService/GetSubCategoriesResponse" message="tns:IVastariAPIService_GetSubCategories_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetArtistById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVastariAPIService/GetArtistById" message="tns:IVastariAPIService_GetArtistById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVastariAPIService/GetArtistByIdResponse" message="tns:IVastariAPIService_GetArtistById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllArtists">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVastariAPIService/GetAllArtists" message="tns:IVastariAPIService_GetAllArtists_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVastariAPIService/GetAllArtistsResponse" message="tns:IVastariAPIService_GetAllArtists_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInboxMessages">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVastariAPIService/GetInboxMessages" message="tns:IVastariAPIService_GetInboxMessages_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVastariAPIService/GetInboxMessagesResponse" message="tns:IVastariAPIService_GetInboxMessages_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSentMessages">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVastariAPIService/GetSentMessages" message="tns:IVastariAPIService_GetSentMessages_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVastariAPIService/GetSentMessagesResponse" message="tns:IVastariAPIService_GetSentMessages_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IVastariAPIService" type="tns:IVastariAPIService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://tempuri.org/IVastariAPIService/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PrivateUserRegistration">
+      <soap:operation soapAction="http://tempuri.org/IVastariAPIService/PrivateUserRegistration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InstitutionalUserRegistration">
+      <soap:operation soapAction="http://tempuri.org/IVastariAPIService/InstitutionalUserRegistration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadObject">
+      <soap:operation soapAction="http://tempuri.org/IVastariAPIService/UploadObject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetObjectDetail">
+      <soap:operation soapAction="http://tempuri.org/IVastariAPIService/GetObjectDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateObjectImages">
+      <soap:operation soapAction="http://tempuri.org/IVastariAPIService/UpdateObjectImages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCategories">
+      <soap:operation soapAction="http://tempuri.org/IVastariAPIService/GetCategories" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubCategories">
+      <soap:operation soapAction="http://tempuri.org/IVastariAPIService/GetSubCategories" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetArtistById">
+      <soap:operation soapAction="http://tempuri.org/IVastariAPIService/GetArtistById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllArtists">
+      <soap:operation soapAction="http://tempuri.org/IVastariAPIService/GetAllArtists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInboxMessages">
+      <soap:operation soapAction="http://tempuri.org/IVastariAPIService/GetInboxMessages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSentMessages">
+      <soap:operation soapAction="http://tempuri.org/IVastariAPIService/GetSentMessages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="VastariAPIService">
+    <wsdl:port name="BasicHttpBinding_IVastariAPIService" binding="tns:BasicHttpBinding_IVastariAPIService">
+      <soap:address location="http://vastarinewvm.cloudapp.net/VastariAPIService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

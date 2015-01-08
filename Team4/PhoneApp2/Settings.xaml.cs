@@ -89,14 +89,14 @@ namespace PhoneApp2
                         //byte[] ProtectedPinByte = this.ReadPinFromFile();
                         DataProtection readdata = new DataProtection();
                         byte[] ProtectedPinByte = readdata.ReadPinFromFile();
-
+             
                         // Decrypt the PIN by using the Unprotect method.
                         // if I enter null or some byte, Unprotect method generates exception.
                         // return message is "The parameter is incorrect" 
-                        byte[] PinByte = ProtectedData.Unprotect(ProtectedPinByte,entropy);
+                        byte[] PinByte = ProtectedData.Unprotect(ProtectedPinByte,null);
                         // Convert the PIN from byte to string 
-                        string EncPincode;
-                        EncPincode = Encoding.UTF8.GetString(PinByte, 0, PinByte.Length);
+                        string EncPincode = Encoding.UTF8.GetString(PinByte, 0, PinByte.Length);
+                
 
                         if (OldPin.Text != EncPincode)
                         {

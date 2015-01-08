@@ -39,10 +39,12 @@ namespace PhoneApp2
             {
                 DataProtection readdata = new DataProtection();
                 byte[] ReadProtectedPinByte = readdata.ReadPinFromFile();
-                byte[] ReadPinByte = ProtectedData.Unprotect(ReadProtectedPinByte, null);
-                string EncPincode = Encoding.UTF8.GetString(ReadPinByte, 0, ReadPinByte.Length);
+                string ProtectedPincode = Encoding.UTF8.GetString(ReadProtectedPinByte, 0, ReadProtectedPinByte.Length);
+               
+               // byte[] ReadPinByte = ProtectedData.Unprotect(ReadProtectedPinByte, null);
+                //string EncPincode = Encoding.UTF8.GetString(ReadPinByte, 0, ReadPinByte.Length);
 
-                if (EncPincode == null)
+                if (ProtectedPincode == "")
                 {
                     DataProtection writedata = new DataProtection();
                     byte[] PinByte = Encoding.UTF8.GetBytes(PinBox.Text);
@@ -54,6 +56,8 @@ namespace PhoneApp2
                 }
                 else
                 {
+                    byte[] ReadPinByte = ProtectedData.Unprotect(ReadProtectedPinByte, null);
+                    string EncPincode = Encoding.UTF8.GetString(ReadPinByte, 0, ReadPinByte.Length);
                     if (EncPincode.CompareTo(PinBox.Text) == 0)
                     {
                     }

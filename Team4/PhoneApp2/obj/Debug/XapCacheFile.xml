@@ -1,35 +1,35 @@
-﻿<xapCache source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Bin\Debug\PhoneApp2_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="18/12/2014 22:41:50">
-  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\obj\Debug\PhoneApp2.dll" archivePath="PhoneApp2.dll" lastWriteTime="18/12/2014 22:41:45" />
-  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\ServiceReferences.ClientConfig" archivePath="ServiceReferences.ClientConfig" lastWriteTime="15/12/2014 16:16:27" />
-  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Assets\004295-3d-glossy-blue-orb-icon-arrows-cut-arrow-down.png" archivePath="Assets\004295-3d-glossy-blue-orb-icon-arrows-cut-arrow-down.png" lastWriteTime="01/12/2014 23:17:03" />
-  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="01/12/2014 23:17:02" />
-  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Assets\Camera-icon-1106011326.png" archivePath="Assets\Camera-icon-1106011326.png" lastWriteTime="01/12/2014 23:17:02" />
-  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Assets\country.xml" archivePath="Assets\country.xml" lastWriteTime="01/12/2014 23:17:02" />
-  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Assets\DT3347.jpg" archivePath="Assets\DT3347.jpg" lastWriteTime="01/12/2014 23:17:02" />
-  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Assets\home.png" archivePath="Assets\home.png" lastWriteTime="01/12/2014 23:17:02" />
-  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Assets\mail.jpg" archivePath="Assets\mail.jpg" lastWriteTime="01/12/2014 23:17:02" />
-  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Assets\Map.png" archivePath="Assets\Map.png" lastWriteTime="01/12/2014 23:17:02" />
-  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Assets\Phone.png" archivePath="Assets\Phone.png" lastWriteTime="01/12/2014 23:17:02" />
-  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Assets\RP-T-1952-278.jpg" archivePath="Assets\RP-T-1952-278.jpg" lastWriteTime="01/12/2014 23:17:02" />
-  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Assets\SK-A-4100.jpg" archivePath="Assets\SK-A-4100.jpg" lastWriteTime="01/12/2014 23:17:02" />
-  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="01/12/2014 23:17:03" />
-  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="01/12/2014 23:17:03" />
-  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="01/12/2014 23:17:03" />
-  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="01/12/2014 23:17:03" />
-  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\README_FIRST.txt" archivePath="README_FIRST.txt" lastWriteTime="01/12/2014 23:17:01" />
-  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Toolkit.Content\ApplicationBar.Add.png" archivePath="Toolkit.Content\ApplicationBar.Add.png" lastWriteTime="01/12/2014 23:17:02" />
-  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Toolkit.Content\ApplicationBar.Cancel.png" archivePath="Toolkit.Content\ApplicationBar.Cancel.png" lastWriteTime="01/12/2014 23:17:02" />
-  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Toolkit.Content\ApplicationBar.Check.png" archivePath="Toolkit.Content\ApplicationBar.Check.png" lastWriteTime="01/12/2014 23:17:02" />
-  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Toolkit.Content\ApplicationBar.Delete.png" archivePath="Toolkit.Content\ApplicationBar.Delete.png" lastWriteTime="01/12/2014 23:17:01" />
-  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Toolkit.Content\ApplicationBar.Select.png" archivePath="Toolkit.Content\ApplicationBar.Select.png" lastWriteTime="01/12/2014 23:17:01" />
-  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="18/12/2014 19:45:32" />
-  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Bin\Debug\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="01/12/2014 23:17:02" />
-  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="01/12/2014 23:17:03" />
+﻿<xapCache source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Bin\Debug\PhoneApp2_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="08/01/2015 03:50:57">
+  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\obj\Debug\PhoneApp2.dll" archivePath="PhoneApp2.dll" lastWriteTime="08/01/2015 03:50:54" />
+  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\ServiceReferences.ClientConfig" archivePath="ServiceReferences.ClientConfig" lastWriteTime="08/01/2015 03:46:00" />
+  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Assets\004295-3d-glossy-blue-orb-icon-arrows-cut-arrow-down.png" archivePath="Assets\004295-3d-glossy-blue-orb-icon-arrows-cut-arrow-down.png" lastWriteTime="03/01/2015 00:57:08" />
+  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="03/01/2015 00:57:08" />
+  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Assets\Camera-icon-1106011326.png" archivePath="Assets\Camera-icon-1106011326.png" lastWriteTime="03/01/2015 00:57:08" />
+  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Assets\country.xml" archivePath="Assets\country.xml" lastWriteTime="03/01/2015 00:57:10" />
+  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Assets\DT3347.jpg" archivePath="Assets\DT3347.jpg" lastWriteTime="03/01/2015 00:57:08" />
+  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Assets\home.png" archivePath="Assets\home.png" lastWriteTime="03/01/2015 00:57:10" />
+  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Assets\mail.jpg" archivePath="Assets\mail.jpg" lastWriteTime="03/01/2015 00:57:10" />
+  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Assets\Map.png" archivePath="Assets\Map.png" lastWriteTime="03/01/2015 00:57:08" />
+  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Assets\Phone.png" archivePath="Assets\Phone.png" lastWriteTime="03/01/2015 00:57:08" />
+  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Assets\RP-T-1952-278.jpg" archivePath="Assets\RP-T-1952-278.jpg" lastWriteTime="03/01/2015 00:57:08" />
+  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Assets\SK-A-4100.jpg" archivePath="Assets\SK-A-4100.jpg" lastWriteTime="03/01/2015 00:57:10" />
+  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="03/01/2015 00:57:10" />
+  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="03/01/2015 00:57:10" />
+  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="03/01/2015 00:57:10" />
+  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="03/01/2015 00:57:10" />
+  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\README_FIRST.txt" archivePath="README_FIRST.txt" lastWriteTime="03/01/2015 00:57:08" />
+  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Toolkit.Content\ApplicationBar.Add.png" archivePath="Toolkit.Content\ApplicationBar.Add.png" lastWriteTime="03/01/2015 00:57:14" />
+  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Toolkit.Content\ApplicationBar.Cancel.png" archivePath="Toolkit.Content\ApplicationBar.Cancel.png" lastWriteTime="03/01/2015 00:57:14" />
+  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Toolkit.Content\ApplicationBar.Check.png" archivePath="Toolkit.Content\ApplicationBar.Check.png" lastWriteTime="03/01/2015 00:57:14" />
+  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Toolkit.Content\ApplicationBar.Delete.png" archivePath="Toolkit.Content\ApplicationBar.Delete.png" lastWriteTime="03/01/2015 00:57:14" />
+  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Toolkit.Content\ApplicationBar.Select.png" archivePath="Toolkit.Content\ApplicationBar.Select.png" lastWriteTime="03/01/2015 00:57:14" />
+  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="04/01/2015 15:39:31" />
+  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Bin\Debug\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="03/01/2015 00:57:08" />
+  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="03/01/2015 00:57:10" />
   <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\Microsoft.Advertising.Mobile.dll" archivePath="Microsoft.Advertising.Mobile.dll" lastWriteTime="10/09/2012 10:43:36" />
   <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\Microsoft.Advertising.Mobile.UI.dll" archivePath="Microsoft.Advertising.Mobile.UI.dll" lastWriteTime="10/09/2012 10:43:36" />
   <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\Microsoft.Advertising.Mobile.UI.xml" archivePath="Microsoft.Advertising.Mobile.UI.xml" lastWriteTime="20/07/2012 08:57:18" />
   <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\Microsoft.Advertising.Mobile.xml" archivePath="Microsoft.Advertising.Mobile.xml" lastWriteTime="20/07/2012 08:57:18" />
   <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v8.0\Libraries\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="03/03/2013 19:40:38" />
-  <file source="C:\Users\yusuke kawano\Desktop\Team4\packages\WPtoolkit.4.2013.08.16\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll" archivePath="Microsoft.Phone.Controls.Toolkit.dll" lastWriteTime="01/12/2014 23:16:56" />
-  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="18/12/2014 22:17:16" />
+  <file source="C:\Users\yusuke kawano\Desktop\Team4\packages\WPtoolkit.4.2013.08.16\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll" archivePath="Microsoft.Phone.Controls.Toolkit.dll" lastWriteTime="03/01/2015 00:57:18" />
+  <file source="C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="05/01/2015 23:11:09" />
 </xapCache>

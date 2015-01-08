@@ -13,6 +13,8 @@ using System.IO;
 using System.ServiceModel;
 using System.Runtime.Serialization.Json;
 using System.Xml;
+using PhoneApp2.VastariAPI;
+
 
 
 namespace PhoneApp2
@@ -51,44 +53,22 @@ namespace PhoneApp2
                 MessageBox.Show("Please fill the username and passwordbox");
             }
             else {
-                try
-                {
-
-                    //11/12 API test
-
-                    //VastariAPI.Service1Client client = new VastariAPI.Service1Client();
-                    //client.LoginAsync(UsrName.Text, PswdBox.Password);
+               try
+               {
+               
+                    VastariAPIServiceClient client = new VastariAPIServiceClient();
+                   //loginResponse response = new loginResponse();
+                   //MessageBox.Show(response.Status);
+                   client.LoginCompleted += new EventHandler<VastariAPI.LoginCompletedEventArgs>(clients_login_done);
                     
-
-                    //Test method
-                    //clients.GetDataAsync("ABC");
-
-                    //Login method
-                   
-                    //clients.LoginAsync(UsrName.Text, PswdBox.Password);
-
-                    // 08/12 API test
-                    //client.LoginAsync(UsrName.Text, PswdBox.Password);
-                    //client.GetDataAsync();
-                    //DataContractJsonSerializer serializer = new DataContractJsonSerializer(typeof(VS_Login));
-                    // VS_Login VSlogin   = (VSlogin)serializer.ReadObject(RES
-
-
-
                     using (IsolatedStorageFile isoStorage = IsolatedStorageFile.GetUserStoreForApplication())
                     {
                         using (IsolatedStorageFileStream stream = isoStorage.OpenFile("pincode.txt", FileMode.Open))
                         {
-                            NavigationService.Navigate(new Uri("/Login.xaml", UriKind.Relative));
+                            NavigationService.Navigate(new Uri("/MenuPage.xaml", UriKind.Relative));
                         }
                     }
-                    //IsolatedStorageFileStream stream = isoStorage.OpenFile("pincode", FileMode.Open);
-                    //StreamReader sr = new StreamReader(stream, System.Text.Encoding.UTF8);
-                    //line = sr.ReadLine();
-                    //if (line== null)
-                    //{
-                    //    NavigationService.Navigate(new Uri("/PinCode.xaml", UriKind.Relative));
-                    //}
+               //     client.CloseAsync();
                 }
                 catch (IsolatedStorageException)
                 {
@@ -100,14 +80,27 @@ namespace PhoneApp2
                 {
                     MessageBox.Show(ex.Message);
                     return;
-                   // Console.WriteLine(ex.Message);
                 }
-               
-                NavigationService.Navigate(new Uri("/Login.xaml", UriKind.Relative));
+                
+               // NavigationService.Navigate(new Uri("/Login.xaml", UriKind.Relative));
             }
 
             //MessageBox.Show("SET PINCODE","Please set a 4 digit pincode. *You will be asked to enter the code each time you re-open the app",MessageBoxButton.OK);
            
+        }
+       
+        void clients_login_done(object sender, VastariAPI.LoginCompletedEventArgs e)
+        {
+            // Write message.
+            MessageBox.Show("login success!");
+            using (IsolatedStorageFile isoStorage = IsolatedStorageFile.GetUserStoreForApplication())
+            {
+                using (IsolatedStorageFileStream stream = isoStorage.OpenFile("pincode.txt", FileMode.Open))
+                {
+                    NavigationService.Navigate(new Uri("/Login.xaml", UriKind.Relative));
+                }
+            }
+
         }
 
         void rtnJSON_DownloadStringCompleted(object sender, DownloadStringCompletedEventArgs e)

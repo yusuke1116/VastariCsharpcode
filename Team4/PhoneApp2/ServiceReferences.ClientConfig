@@ -1,6 +1,6 @@
 ﻿<configuration>
-    <system.serviceModel>
-        <bindings />
-        <client />
-    </system.serviceModel>
+  <system.serviceModel>
+    <bindings />
+    <client />
+  </system.serviceModel>
 </configuration>

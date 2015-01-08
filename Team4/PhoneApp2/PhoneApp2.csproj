@@ -250,31 +250,35 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\AppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\WMAppManifest.xml">
       <SubType>Designer</SubType>
     </None>
     <None Include="Resources\Lato-Regular.ttf" />
     <None Include="Resources\TrajanPro-Regular.ttf" />
-    <None Include="Service References\VastariAPI\Service1.disco" />
+    <None Include="Service References\VastariAPI\VastariAPIService.disco" />
     <None Include="Service References\VastariAPI\configuration91.svcinfo" />
     <None Include="Service References\VastariAPI\configuration.svcinfo" />
     <None Include="Service References\VastariAPI\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <Content Include="ServiceReferences.ClientConfig" />
-    <None Include="Service References\VastariAPI\Service1.wsdl" />
-    <None Include="Service References\VastariAPI\Service1.xsd">
+    <Content Include="ServiceReferences.ClientConfig">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Service References\VastariAPI\VastariAPIService.wsdl" />
+    <None Include="Service References\VastariAPI\VastariAPIService.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\VastariAPI\Service11.xsd">
+    <None Include="Service References\VastariAPI\VastariAPIService1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\VastariAPI\Service12.xsd">
+    <None Include="Service References\VastariAPI\VastariAPIService2.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\VastariAPI\Service13.xsd">
+    <None Include="Service References\VastariAPI\VastariAPIService3.xsd">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>

@@ -13,9 +13,9 @@ namespace PhoneApp2
 {
     public partial class Page6 : PhoneApplicationPage
     {
-
+        
         PhotoChooserTask photoChooserTask;
-        PhotoResult f=null;
+      
         public Page6()
         {
 
@@ -41,13 +41,16 @@ namespace PhoneApp2
         {
             if (e.TaskResult == TaskResult.OK)
             {
-                MessageBox.Show(e.ChosenPhoto.Length.ToString());
+            //    MessageBox.Show(e.ChosenPhoto.Length.ToString());
 
                 //Code to display the photo on the page in an image control named myImage.
                 System.Windows.Media.Imaging.BitmapImage bmp = new System.Windows.Media.Imaging.BitmapImage();
                 bmp.SetSource(e.ChosenPhoto);
-               
+           
                 myImage.Source = bmp;
+                
+            //    PhoneApp2.ServiceReference1.Service1Client clients = new PhoneApp2.ServiceReference1.Service1Client();
+             
             }
         }
     }

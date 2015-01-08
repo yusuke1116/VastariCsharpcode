@@ -15,9 +15,10 @@ namespace PhoneApp2
     {
         public byte[] ReadPinFromFile()
         {
+
             // Access the file in the application's isolated storage.
             IsolatedStorageFile readfile = IsolatedStorageFile.GetUserStoreForApplication();
-            IsolatedStorageFileStream readstream = new IsolatedStorageFileStream("pincode.txt", System.IO.FileMode.Open, FileAccess.Read, readfile);
+            IsolatedStorageFileStream readstream = new IsolatedStorageFileStream("pincode.txt", System.IO.FileMode.OpenOrCreate, FileAccess.Read, readfile);
 
             // Read the PIN from the file.
             Stream reader = new StreamReader(readstream).BaseStream;
