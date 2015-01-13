@@ -1,6 +1,23 @@
 ﻿<configuration>
+  <system.web>
+    <compilation debug="true" targetFramework="4.5" />
+    <httpRuntime targetFramework="4.5" />
+
+  </system.web>
   <system.serviceModel>
-    <bindings />
-    <client />
+
+    <bindings>
+      <basicHttpBinding>
+        <binding name="BasicHttpBinding_IVastariAPIService1" maxBufferSize="2147483647"
+          maxReceivedMessageSize="2147483647">
+          <security mode="None" />
+        </binding>
+      </basicHttpBinding>
+    </bindings>
+    <client>
+      <endpoint address="http://vastarinewvm.cloudapp.net/VastariAPIService.svc"
+        binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IVastariAPIService1"
+        contract="VastariAPI.IVastariAPIService" name="BasicHttpBinding_IVastariAPIService1" />
+    </client>
   </system.serviceModel>
 </configuration>

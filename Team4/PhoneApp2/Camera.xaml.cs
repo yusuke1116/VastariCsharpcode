@@ -22,6 +22,8 @@ namespace PhoneApp2
         // Variables
         private int savedCounter = 0;
         PhotoCamera cam;
+        // Holds current flash mode.
+        private string currentFlashMode;
         MediaLibrary library = new MediaLibrary();
 ///
         ///
@@ -38,6 +40,15 @@ namespace PhoneApp2
         {
             // The event is fired when the viewfinder is tapped (for focus).
             viewfinderCanvas.Tap += new EventHandler<System.Windows.Input.GestureEventArgs>(focus_Tapped);
+
+            // The event is fired when the shutter button receives a half press.
+            CameraButtons.ShutterKeyHalfPressed += OnButtonHalfPress;
+
+            // The event is fired when the shutter button receives a full press.
+            CameraButtons.ShutterKeyPressed += OnButtonFullPress;
+
+            // The event is fired when the shutter button is released.
+            CameraButtons.ShutterKeyReleased += OnButtonRelease;
 
             // Check to see if the camera is available on the phone.
             if ((PhotoCamera.IsCameraTypeSupported(CameraType.Primary) == true) ||
@@ -94,6 +105,8 @@ namespace PhoneApp2
                 ShutterButton.IsEnabled = false;
                 //extra
                 AFButton.IsEnabled = false;
+                //disable flash botton
+                FlashButton.IsEnabled = false;
 
             }
          
@@ -114,6 +127,11 @@ namespace PhoneApp2
                 cam.CaptureThumbnailAvailable -= cam_CaptureThumbnailAvailable;
                 //extra
                 cam.AutoFocusCompleted -= cam_AutoFocusCompleted;
+                ////
+                CameraButtons.ShutterKeyHalfPressed -= OnButtonHalfPress;
+                CameraButtons.ShutterKeyPressed -= OnButtonFullPress;
+                CameraButtons.ShutterKeyReleased -= OnButtonRelease;
+
                
             }
         }
@@ -127,6 +145,9 @@ namespace PhoneApp2
                 {
                     // Write message.
                     txtDebug.Text = "Camera initialized.";
+                    // Set flash button text.
+                    FlashButton.Content = "Fl:" + cam.FlashMode.ToString();
+
                 });
             }
         }
@@ -411,5 +432,123 @@ namespace PhoneApp2
                 //myImage.Source = bmp;
             }
         }
+
+        // Activate a flash mode.
+        // Cycle through flash mode options when the flash button is pressed.
+        private void changeFlash_Clicked(object sender, RoutedEventArgs e)
+        {
+
+            switch (cam.FlashMode)
+            {
+                case FlashMode.Off:
+                    if (cam.IsFlashModeSupported(FlashMode.On))
+                    {
+                        // Specify that flash should be used.
+                        cam.FlashMode = FlashMode.On;
+                        FlashButton.Content = "Fl:On";
+                        currentFlashMode = "Flash mode: On";
+                    }
+                    break;
+                case FlashMode.On:
+                    if (cam.IsFlashModeSupported(FlashMode.RedEyeReduction))
+                    {
+                        // Specify that the red-eye reduction flash should be used.
+                        cam.FlashMode = FlashMode.RedEyeReduction;
+                        FlashButton.Content = "Fl:RER";
+                        currentFlashMode = "Flash mode: RedEyeReduction";
+                    }
+                    else if (cam.IsFlashModeSupported(FlashMode.Auto))
+                    {
+                        // If red-eye reduction is not supported, specify automatic mode.
+                        cam.FlashMode = FlashMode.Auto;
+                        FlashButton.Content = "Fl:Auto";
+                        currentFlashMode = "Flash mode: Auto";
+                    }
+                    else
+                    {
+                        // If automatic is not supported, specify that no flash should be used.
+                        cam.FlashMode = FlashMode.Off;
+                        FlashButton.Content = "Fl:Off";
+                        currentFlashMode = "Flash mode: Off";
+                    }
+                    break;
+                case FlashMode.RedEyeReduction:
+                    if (cam.IsFlashModeSupported(FlashMode.Auto))
+                    {
+                        // Specify that the flash should be used in the automatic mode.
+                        cam.FlashMode = FlashMode.Auto;
+                        FlashButton.Content = "Fl:Auto";
+                        currentFlashMode = "Flash mode: Auto";
+                    }
+                    else
+                    {
+                        // If automatic is not supported, specify that no flash should be used.
+                        cam.FlashMode = FlashMode.Off;
+                        FlashButton.Content = "Fl:Off";
+                        currentFlashMode = "Flash mode: Off";
+                    }
+                    break;
+                case FlashMode.Auto:
+                    if (cam.IsFlashModeSupported(FlashMode.Off))
+                    {
+                        // Specify that no flash should be used.
+                        cam.FlashMode = FlashMode.Off;
+                        FlashButton.Content = "Fl:Off";
+                        currentFlashMode = "Flash mode: Off";
+                    }
+                    break;
+            }
+
+            // Display current flash mode.
+            this.Dispatcher.BeginInvoke(delegate()
+            {
+                txtDebug.Text = currentFlashMode;
+            });
+        }
+        // Provide auto-focus with a half button press using the hardware shutter button.
+        private void OnButtonHalfPress(object sender, EventArgs e)
+        {
+            if (cam != null)
+            {
+                // Focus when a capture is not in progress.
+                try
+                {
+                    this.Dispatcher.BeginInvoke(delegate()
+                    {
+                        txtDebug.Text = "Half Button Press: Auto Focus";
+                    });
+
+                    cam.Focus();
+                }
+                catch (Exception focusError)
+                {
+                    // Cannot focus when a capture is in progress.
+                    this.Dispatcher.BeginInvoke(delegate()
+                    {
+                        txtDebug.Text = focusError.Message;
+                    });
+                }
+            }
+        }
+
+        // Capture the image with a full button press using the hardware shutter button.
+        private void OnButtonFullPress(object sender, EventArgs e)
+        {
+            if (cam != null)
+            {
+                cam.CaptureImage();
+            }
+        }
+
+        // Cancel the focus if the half button press is released using the hardware shutter button.
+        private void OnButtonRelease(object sender, EventArgs e)
+        {
+
+            if (cam != null)
+            {
+                cam.CancelFocus();
+            }
+        }
+
     }
 }

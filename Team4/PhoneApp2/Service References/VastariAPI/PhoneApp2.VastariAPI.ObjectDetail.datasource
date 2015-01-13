@@ -6,5 +6,5 @@
     cause the file to be unrecognizable by the program.
 -->
 <GenericObjectDataSource DisplayName="ObjectDetail" Version="1.0" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
-   <TypeInfo>PhoneApp2.VastariAPI.ObjectDetail</TypeInfo>
+   <TypeInfo>PhoneApp2.VastariAPI.ObjectDetail, PhoneApp2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</TypeInfo>
 </GenericObjectDataSource>

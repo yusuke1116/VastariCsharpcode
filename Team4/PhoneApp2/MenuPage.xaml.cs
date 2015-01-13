@@ -19,7 +19,7 @@ namespace PhoneApp2
 
         private void MyCollection(object sender, RoutedEventArgs e) //go to my collection
         {
-
+            NavigationService.Navigate(new Uri("/Mycollection.xaml", UriKind.Relative));
         }
 
         private void Upload(object sender, RoutedEventArgs e) //go to upload object
@@ -39,7 +39,7 @@ namespace PhoneApp2
 
         private void Close(object sender, RoutedEventArgs e) //go back to current page
         {
-
+            NavigationService.GoBack();
         }
 
        

@@ -69,9 +69,33 @@ namespace PhoneApp2
         // This code will not execute when the application is first launched
         private void Application_Activated(object sender, ActivatedEventArgs e)
         {
-            RootFrame.Dispatcher.BeginInvoke(delegate{
-                RootFrame.Navigate(new Uri("/PinCode.xaml", UriKind.Relative));
-            });
+           string result =  ReadDataToIsolatedStorage("originalpage.txt");
+
+           if (result == "/Mycollection.xamltomDependencyProperty")
+           {
+               RootFrame.Dispatcher.BeginInvoke(delegate
+               {
+                   RootFrame.Navigate(new Uri("/Mycollection.xaml", UriKind.Relative));
+               });
+           }
+               	//	result	"/Camera2.xaml.xamltomDependencyProperty"	string
+
+           else if (result == "/Camera2.xaml.xamltomDependencyProperty")
+           {
+               RootFrame.Dispatcher.BeginInvoke(delegate
+               {
+                   RootFrame.Navigate(new Uri("/Camera2.xaml", UriKind.Relative));
+               });
+           }
+           else
+           {
+               RootFrame.Dispatcher.BeginInvoke(delegate
+               {
+                   RootFrame.Navigate(new Uri(result, UriKind.Relative));
+                  // RootFrame.Navigate(new Uri("/PinCode.xaml", UriKind.Relative));
+               });
+           }
+
    
         }
 
@@ -80,13 +104,18 @@ namespace PhoneApp2
         // This code will not execute when the application is closing
         private void Application_Deactivated(object sender, DeactivatedEventArgs e)
         {
-            //11/12 test 
             //string page = PhoneApplicationFrame.CurrentSourceProperty.ToString();
             string page = RootFrame.CurrentSource.ToString();
             SaveDataToIsolatedStorage("originalpage.txt", page);
-            MessageBox.Show("Deactivated");
-           // string page = currentRootFrame.Content;
-           // SaveDataToIsolatedStorage("pagefile.txt",page);
+        }
+
+        private string ReadDataToIsolatedStorage(string isoFileName)
+        {
+            IsolatedStorageFile isoStore = IsolatedStorageFile.GetUserStoreForApplication();
+            StreamReader rw = new StreamReader(isoStore.OpenFile(isoFileName, FileMode.Open));
+            string result = rw.ReadLine();
+           rw.Close();
+           return result;
         }
 
         private void SaveDataToIsolatedStorage(string isoFileName, string value)
@@ -95,14 +124,12 @@ namespace PhoneApp2
             StreamWriter sw = new StreamWriter(isoStore.OpenFile(isoFileName, FileMode.OpenOrCreate));
             sw.Write(value);
             sw.Close();
-            IsolatedStorageSettings.ApplicationSettings["DataLastSaveTime"] = DateTime.Now;
         }
 
         // Code to execute when the application is closing (eg, user hit Back)
         // This code will not execute when the application is deactivated
         private void Application_Closing(object sender, ClosingEventArgs e)
         {
-            MessageBox.Show("Deactivated");
         }
 
         // Code to execute if a navigation fails

@@ -13,8 +13,6 @@ using System.IO;
 using System.ServiceModel;
 using System.Runtime.Serialization.Json;
 using System.Xml;
-using PhoneApp2.VastariAPI;
-
 
 
 namespace PhoneApp2
@@ -55,8 +53,9 @@ namespace PhoneApp2
             else {
                try
                {
-               
-                    VastariAPIServiceClient client = new VastariAPIServiceClient();
+                   PhoneApp2.VastariAPI.VastariAPIServiceClient client = new VastariAPI.VastariAPIServiceClient();
+
+                  //client.LoginAsync("XXX", "shibainu48");
                    //loginResponse response = new loginResponse();
                    //MessageBox.Show(response.Status);
                    client.LoginCompleted += new EventHandler<VastariAPI.LoginCompletedEventArgs>(clients_login_done);
@@ -65,7 +64,7 @@ namespace PhoneApp2
                     {
                         using (IsolatedStorageFileStream stream = isoStorage.OpenFile("pincode.txt", FileMode.Open))
                         {
-                            NavigationService.Navigate(new Uri("/MenuPage.xaml", UriKind.Relative));
+                            NavigationService.Navigate(new Uri("/Login.xaml", UriKind.Relative));
                         }
                     }
                //     client.CloseAsync();

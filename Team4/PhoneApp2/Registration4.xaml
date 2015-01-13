@@ -47,6 +47,7 @@
             	<LineBreak/>
             	<Run Text="If you don't see this email in your inbox within 15 minutes, look for it in your junk-mail folder. If you find it there, please mark the email as Not Junk and add @vastari.com to your address book."/>
             </TextBlock>
+            <Button Content="Go to your account" HorizontalAlignment="Left" Margin="94,375,0,0" VerticalAlignment="Top" Background="#FF76D6EA" Click="Button_Click_1"/>
 
         </Grid>
     </Grid>

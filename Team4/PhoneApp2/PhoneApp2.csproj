@@ -102,9 +102,6 @@
       <DependentUpon>Camera2.xaml</DependentUpon>
     </Compile>
     <Compile Include="DataProtection.cs" />
-    <Compile Include="DeactivatedPinCode.xaml.cs">
-      <DependentUpon>DeactivatedPinCode.xaml</DependentUpon>
-    </Compile>
     <Compile Include="LocalizedStrings.cs" />
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
@@ -121,8 +118,8 @@
     <Compile Include="MenuPage.xaml.cs">
       <DependentUpon>MenuPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pagetest.xaml.cs">
-      <DependentUpon>Pagetest.xaml</DependentUpon>
+    <Compile Include="Mycollection.xaml.cs">
+      <DependentUpon>Mycollection.xaml</DependentUpon>
     </Compile>
     <Compile Include="PinCode.xaml.cs">
       <DependentUpon>PinCode.xaml</DependentUpon>
@@ -179,10 +176,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="DeactivatedPinCode.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Login.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -203,9 +196,9 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pagetest.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="Mycollection.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="PinCode.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -258,16 +251,24 @@
     </None>
     <None Include="Resources\Lato-Regular.ttf" />
     <None Include="Resources\TrajanPro-Regular.ttf" />
-    <None Include="Service References\VastariAPI\VastariAPIService.disco" />
-    <None Include="Service References\VastariAPI\configuration91.svcinfo" />
-    <None Include="Service References\VastariAPI\configuration.svcinfo" />
-    <None Include="Service References\VastariAPI\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
+    <None Include="Service References\VastariAPI\PhoneApp2.VastariAPI.loginResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <Content Include="ServiceReferences.ClientConfig">
-      <SubType>Designer</SubType>
-    </Content>
+    <None Include="Service References\VastariAPI\PhoneApp2.VastariAPI.Messages.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\VastariAPI\PhoneApp2.VastariAPI.ObjectDetail.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\VastariAPI\PhoneApp2.VastariAPI.VS_Artist.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\VastariAPI\PhoneApp2.VastariAPI.VS_Category.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\VastariAPI\PhoneApp2.VastariAPI.VS_Objects.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\VastariAPI\VastariAPIService.wsdl" />
     <None Include="Service References\VastariAPI\VastariAPIService.xsd">
       <SubType>Designer</SubType>
@@ -281,6 +282,10 @@
     <None Include="Service References\VastariAPI\VastariAPIService3.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Service References\VastariAPI\VastariAPIService.disco" />
+    <Content Include="ServiceReferences.ClientConfig">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\004295-3d-glossy-blue-orb-icon-arrows-cut-arrow-down.png" />
@@ -313,6 +318,13 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="README_FIRST.txt" />
+    <None Include="Service References\VastariAPI\configuration91.svcinfo" />
+    <None Include="Service References\VastariAPI\configuration.svcinfo" />
+    <None Include="Service References\VastariAPI\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
     <Content Include="Toolkit.Content\ApplicationBar.Add.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Check.png" />

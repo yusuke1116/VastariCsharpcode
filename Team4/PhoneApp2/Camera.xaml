@@ -43,6 +43,7 @@
 
 
             <Button x:Name="AFButton" Content="AF" Click="focus_Clicked" FontWeight="ExtraBold" Background="#FF00BFDF" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato" FontSize="25"/>
+            <Button Name="FlashButton" Content="Flash" Click="changeFlash_Clicked" Background="#FF00BFDF" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato" FontSize="25"  />
             <Button x:Name ="Next" Content="Next" Click ="Next_Clicked"  FontWeight="ExtraBold" Background="#FF00BFDF" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato" FontSize="25"/>
         </StackPanel>
 

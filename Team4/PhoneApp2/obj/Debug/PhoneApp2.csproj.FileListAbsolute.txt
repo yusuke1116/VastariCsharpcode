@@ -654,13 +654,11 @@ C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Bin\Debug\vi-VN\Microsoft.Phone.C
 C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Bin\Debug\zh-CN\Microsoft.Phone.Controls.Toolkit.resources.dll
 C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\Bin\Debug\zh-TW\Microsoft.Phone.Controls.Toolkit.resources.dll
 C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\obj\Debug\App.g.cs
-C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\obj\Debug\DeactivatedPinCode.g.cs
 C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\obj\Debug\Login.g.cs
 C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\obj\Debug\MainPage.g.cs
 C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\obj\Debug\AboutUs.g.cs
 C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\obj\Debug\Contact.g.cs
 C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\obj\Debug\MenuPage.g.cs
-C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\obj\Debug\Pagetest.g.cs
 C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\obj\Debug\PinCode.g.cs
 C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\obj\Debug\Register.g.cs
 C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\obj\Debug\Registration.g.cs
@@ -679,7 +677,6 @@ C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\obj\Debug\XapCacheFile.xml
 C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\obj\Debug\Camera.g.cs
 C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\obj\Debug\Camera2.g.cs
 C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\obj\Debug\UploadPhoto.g.cs
-C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\obj\Debug\PhoneApp2.csprojResolveAssemblyReference.cache
 C:\Users\yusuke kawano\Desktop\VastariCsharpcode-137ee072c3955400252b933002498ecc2c78b16a\Team4\PhoneApp2\Bin\Debug\Assets\ApplicationIcon.png
 C:\Users\yusuke kawano\Desktop\VastariCsharpcode-137ee072c3955400252b933002498ecc2c78b16a\Team4\PhoneApp2\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png
 C:\Users\yusuke kawano\Desktop\VastariCsharpcode-137ee072c3955400252b933002498ecc2c78b16a\Team4\PhoneApp2\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png
@@ -867,3 +864,5 @@ C:\Users\Shing Yau Lau\Desktop\Team4\PhoneApp2\obj\Debug\PhoneApp2.csproj.Genera
 C:\Users\Shing Yau Lau\Desktop\Team4\PhoneApp2\obj\Debug\PhoneApp2.dll
 C:\Users\Shing Yau Lau\Desktop\Team4\PhoneApp2\obj\Debug\PhoneApp2.pdb
 C:\Users\Shing Yau Lau\Desktop\Team4\PhoneApp2\obj\Debug\XapCacheFile.xml
+C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\obj\Debug\PhoneApp2.csprojResolveAssemblyReference.cache
+C:\Users\yusuke kawano\Desktop\Team4\PhoneApp2\obj\Debug\Mycollection.g.cs
