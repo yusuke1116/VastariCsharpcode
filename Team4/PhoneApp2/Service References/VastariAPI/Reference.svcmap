@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="1a87658a-70b1-487b-baab-37235d7eee12" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="fb3edcfa-31e4-49cf-8a18-a676ba293fcd" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
     <EnableDataBinding>true</EnableDataBinding>
@@ -8,7 +8,9 @@
     <GenerateInternalTypes>false</GenerateInternalTypes>
     <GenerateMessageContracts>false</GenerateMessageContracts>
     <NamespaceMappings />
-    <CollectionMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
     <GenerateSerializableTypes>false</GenerateSerializableTypes>
     <Serializer>Auto</Serializer>
     <UseSerializerForFaults>true</UseSerializerForFaults>
@@ -21,12 +23,12 @@
     <MetadataSource Address="http://vastarinewvm.cloudapp.net/VastariAPIService.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="VastariAPIService.xsd" MetadataType="Schema" ID="94891269-8e05-4cd9-9306-cb795adcd5f5" SourceId="1" SourceUrl="http://vastarinewvm.cloudapp.net/VastariAPIService.svc?xsd=xsd1" />
-    <MetadataFile FileName="VastariAPIService1.xsd" MetadataType="Schema" ID="c2d0156c-0ffa-496b-a375-8871b4b0d772" SourceId="1" SourceUrl="http://vastarinewvm.cloudapp.net/VastariAPIService.svc?xsd=xsd0" />
-    <MetadataFile FileName="VastariAPIService2.xsd" MetadataType="Schema" ID="05c2efc4-2b41-45f4-94d1-7645a15f61e1" SourceId="1" SourceUrl="http://vastarinewvm.cloudapp.net/VastariAPIService.svc?xsd=xsd2" />
-    <MetadataFile FileName="VastariAPIService.disco" MetadataType="Disco" ID="0e42684f-7223-45da-8c3e-55a652c6828f" SourceId="1" SourceUrl="http://vastarinewvm.cloudapp.net/VastariAPIService.svc?disco" />
-    <MetadataFile FileName="VastariAPIService3.xsd" MetadataType="Schema" ID="06d504b2-865e-466b-bb6c-b7147893ed2c" SourceId="1" SourceUrl="http://vastarinewvm.cloudapp.net/VastariAPIService.svc?xsd=xsd3" />
-    <MetadataFile FileName="VastariAPIService.wsdl" MetadataType="Wsdl" ID="0c839501-8c74-4aee-a415-920d6d3ccf23" SourceId="1" SourceUrl="http://vastarinewvm.cloudapp.net/VastariAPIService.svc?wsdl" />
+    <MetadataFile FileName="VastariAPIService.xsd" MetadataType="Schema" ID="669a85da-e33d-4b7f-9fcf-003a9e2329e8" SourceId="1" SourceUrl="http://vastarinewvm.cloudapp.net/VastariAPIService.svc?xsd=xsd1" />
+    <MetadataFile FileName="VastariAPIService1.xsd" MetadataType="Schema" ID="a5c10ca8-dd51-440f-ace6-021f48165465" SourceId="1" SourceUrl="http://vastarinewvm.cloudapp.net/VastariAPIService.svc?xsd=xsd0" />
+    <MetadataFile FileName="VastariAPIService2.xsd" MetadataType="Schema" ID="90f631e8-1a2f-40b0-9b55-53b2ac031b16" SourceId="1" SourceUrl="http://vastarinewvm.cloudapp.net/VastariAPIService.svc?xsd=xsd2" />
+    <MetadataFile FileName="VastariAPIService.disco" MetadataType="Disco" ID="5896d0fb-c13b-41ed-b374-37a0a371738e" SourceId="1" SourceUrl="http://vastarinewvm.cloudapp.net/VastariAPIService.svc?disco" />
+    <MetadataFile FileName="VastariAPIService3.xsd" MetadataType="Schema" ID="a3c4eb7c-f89d-4349-9952-599b7b035af6" SourceId="1" SourceUrl="http://vastarinewvm.cloudapp.net/VastariAPIService.svc?xsd=xsd3" />
+    <MetadataFile FileName="VastariAPIService.wsdl" MetadataType="Wsdl" ID="af76e7c4-33c7-4265-a3b2-e58a14829f5b" SourceId="1" SourceUrl="http://vastarinewvm.cloudapp.net/VastariAPIService.svc?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

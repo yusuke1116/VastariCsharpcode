@@ -7,17 +7,17 @@
   <system.serviceModel>
 
     <bindings>
-      <basicHttpBinding>
-        <binding name="BasicHttpBinding_IVastariAPIService1" maxBufferSize="2147483647"
-          maxReceivedMessageSize="2147483647">
-          <security mode="None" />
-        </binding>
-      </basicHttpBinding>
+        <basicHttpBinding>
+            <binding name="BasicHttpBinding_IVastariAPIService" maxBufferSize="2147483647"
+                maxReceivedMessageSize="2147483647">
+                <security mode="None" />
+            </binding>
+        </basicHttpBinding>
     </bindings>
     <client>
-      <endpoint address="http://vastarinewvm.cloudapp.net/VastariAPIService.svc"
-        binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IVastariAPIService1"
-        contract="VastariAPI.IVastariAPIService" name="BasicHttpBinding_IVastariAPIService1" />
+        <endpoint address="http://vastarinewvm.cloudapp.net/VastariAPIService.svc"
+            binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IVastariAPIService"
+            contract="VastariAPI.IVastariAPIService" name="BasicHttpBinding_IVastariAPIService" />
     </client>
   </system.serviceModel>
 </configuration>

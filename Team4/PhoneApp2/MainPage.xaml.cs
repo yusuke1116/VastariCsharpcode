@@ -54,19 +54,18 @@ namespace PhoneApp2
                try
                {
                    PhoneApp2.VastariAPI.VastariAPIServiceClient client = new VastariAPI.VastariAPIServiceClient();
-
-                  //client.LoginAsync("XXX", "shibainu48");
-                   //loginResponse response = new loginResponse();
-                   //MessageBox.Show(response.Status);
-                   client.LoginCompleted += new EventHandler<VastariAPI.LoginCompletedEventArgs>(clients_login_done);
+                   client.LoginCompleted += clients_login_done;
+                   client.LoginAsync(UsrName.Text, PswdBox.Password);
+                  
+              
                     
-                    using (IsolatedStorageFile isoStorage = IsolatedStorageFile.GetUserStoreForApplication())
+                   /* using (IsolatedStorageFile isoStorage = IsolatedStorageFile.GetUserStoreForApplication())
                     {
                         using (IsolatedStorageFileStream stream = isoStorage.OpenFile("pincode.txt", FileMode.Open))
                         {
                             NavigationService.Navigate(new Uri("/Login.xaml", UriKind.Relative));
                         }
-                    }
+                    }*/
                //     client.CloseAsync();
                 }
                 catch (IsolatedStorageException)
@@ -91,14 +90,29 @@ namespace PhoneApp2
         void clients_login_done(object sender, VastariAPI.LoginCompletedEventArgs e)
         {
             // Write message.
-            MessageBox.Show("login success!");
-            using (IsolatedStorageFile isoStorage = IsolatedStorageFile.GetUserStoreForApplication())
+            try
+            {
+                MessageBox.Show("LOGIN SUCCESS");
+                //MessageBox.Show(e.Result.ToString());
+                using (IsolatedStorageFile isoStorage = IsolatedStorageFile.GetUserStoreForApplication())
+                {
+                    using (IsolatedStorageFileStream stream = isoStorage.OpenFile("pincode.txt", FileMode.Open))
+                    {
+                        NavigationService.Navigate(new Uri("/Login.xaml", UriKind.Relative));
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("login error! id OR password is different!");
+            }
+           /* using (IsolatedStorageFile isoStorage = IsolatedStorageFile.GetUserStoreForApplication())
             {
                 using (IsolatedStorageFileStream stream = isoStorage.OpenFile("pincode.txt", FileMode.Open))
                 {
                     NavigationService.Navigate(new Uri("/Login.xaml", UriKind.Relative));
                 }
-            }
+            }*/
 
         }
 

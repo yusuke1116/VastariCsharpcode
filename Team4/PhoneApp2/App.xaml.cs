@@ -71,7 +71,9 @@ namespace PhoneApp2
         {
            string result =  ReadDataToIsolatedStorage("originalpage.txt");
 
-           if (result == "/Mycollection.xamltomDependencyProperty")
+           string collection = result.Substring(0, 13);
+
+           if (collection.Equals("/Mycollection"))
            {
                RootFrame.Dispatcher.BeginInvoke(delegate
                {
@@ -80,7 +82,7 @@ namespace PhoneApp2
            }
                	//	result	"/Camera2.xaml.xamltomDependencyProperty"	string
 
-           else if (result == "/Camera2.xaml.xamltomDependencyProperty")
+           else if (collection.Equals("/Camera2.xaml"))
            {
                RootFrame.Dispatcher.BeginInvoke(delegate
                {
@@ -91,8 +93,7 @@ namespace PhoneApp2
            {
                RootFrame.Dispatcher.BeginInvoke(delegate
                {
-                   RootFrame.Navigate(new Uri(result, UriKind.Relative));
-                  // RootFrame.Navigate(new Uri("/PinCode.xaml", UriKind.Relative));
+                  RootFrame.Navigate(new Uri("/PinCode.xaml", UriKind.Relative));
                });
            }
 
