@@ -57,7 +57,15 @@ namespace PhoneApp2
                    client.LoginCompleted += clients_login_done;
                    client.LoginAsync(UsrName.Text, PswdBox.Password);
                    client.CloseAsync();
+                   using (IsolatedStorageFile isoStorage = IsolatedStorageFile.GetUserStoreForApplication())
+                   {
+                       using (IsolatedStorageFileStream stream = isoStorage.OpenFile("pincode.txt", FileMode.Open))
+                       {
+                           NavigationService.Navigate(new Uri("/Login.xaml", UriKind.Relative));
+                       }
+                   }
                 }
+ 
                 catch (IsolatedStorageException)
                 {
                     MessageBox.Show("1st time Login", "Please set a 4 digit pincode.", MessageBoxButton.OK);
@@ -78,13 +86,13 @@ namespace PhoneApp2
             try
             {
                 MessageBox.Show("LOGIN SUCCESS");
-                using (IsolatedStorageFile isoStorage = IsolatedStorageFile.GetUserStoreForApplication())
+               /* using (IsolatedStorageFile isoStorage = IsolatedStorageFile.GetUserStoreForApplication())
                 {
                     using (IsolatedStorageFileStream stream = isoStorage.OpenFile("pincode.txt", FileMode.Open))
                     {
                         NavigationService.Navigate(new Uri("/Login.xaml", UriKind.Relative));
                     }
-                }
+                }*/
             }
             catch (Exception)
             {
