@@ -73,11 +73,7 @@ namespace PhoneApp2
             
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
+ 
         private void MainPage(object sender, RoutedEventArgs e) //go back to Mainpage
         {
             NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));

@@ -21,7 +21,11 @@ namespace PhoneApp2
             
             var source = new List<String>();
             source.Add("Avid Collector");
-            source.Add("Student");
+            source.Add("Leisurely Collector");
+            source.Add("Scholar/Student");
+            source.Add("Professional Collector");
+            source.Add("Collector by inheritance");
+
             this.listPicker.ItemsSource = source;
             
         }
@@ -50,10 +54,7 @@ namespace PhoneApp2
             NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
         }
 
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-           
-        }
+       
 
         private void HyperlinkButton_Click(object sender, RoutedEventArgs e)
         {
@@ -69,15 +70,6 @@ namespace PhoneApp2
             wtb.Show(); 
         }
 
-        private void Agree_Checked(object sender, RoutedEventArgs e)
-        {
-            //Agree.IsChecked = true;
-
-        }
-
-        private void Fine_Art_Checked(object sender, RoutedEventArgs e)
-        {
-           // Fine_Art.IsChecked = true;
-        }
+        
     }
 }

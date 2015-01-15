@@ -34,7 +34,7 @@
         </Grid>
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="10,0,14,0" Background="White" Height="658" VerticalAlignment="Bottom">
-            <TextBox x:Name="UsrName" HorizontalAlignment="Left" Height="72" Margin="0,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="408" TextChanged="TextBox_TextChanged" Text="aaaaaa" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato" FontSize="23" Background="Gray"/>
+            <TextBox x:Name="UsrName" HorizontalAlignment="Left" Height="72" Margin="0,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="408" Text="aaaaaa" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato" FontSize="23" Background="Gray"/>
             <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="225" Height="50" Foreground="Black" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato">
             	<Run Text="Username:*"/>
             	<LineBreak/>
@@ -49,14 +49,14 @@
             	<Run Text=":"/>
             	<Run Text="*"/>
             </TextBlock>
-            <TextBox x:Name="ConEmail" HorizontalAlignment="Left" Height="72" Margin="0,273,0,0" TextWrapping="Wrap" Text="bb@" VerticalAlignment="Top" Width="408" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato" FontSize="23" Background="Gray"/>
+            <TextBox x:Name="ConEmail" HorizontalAlignment="Left" Height="72" Margin="0,273,0,0" TextWrapping="Wrap" Text="bb@" VerticalAlignment="Top" Width="408" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato" FontSize="23" Background="Gray" />
             <TextBlock HorizontalAlignment="Left" Margin="10,350,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="284" Height="60" Foreground="Black" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato">
             	<Run Text="Password:*"/>
             	<LineBreak/>
             	<Run Text="(minimum 6 characters)"/>
 
             </TextBlock>
-            <TextBox x:Name="Pswd" HorizontalAlignment="Left" Height="72" Margin="0,410,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="408" TextChanged="TextBox_TextChanged" Text="cccccc" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato" FontSize="23" Background="Gray"/>
+            <TextBox x:Name="Pswd" HorizontalAlignment="Left" Height="72" Margin="0,410,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="408" Text="cccccc" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato" FontSize="23" Background="Gray"/>
             <TextBlock HorizontalAlignment="Left" Margin="10,487,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="225" Foreground="Black" FontFamily="Lato">
             	<Run Text="Confirm Password:*"/>
 

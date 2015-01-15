@@ -27,15 +27,21 @@ namespace PhoneApp2
             NavigationService.Navigate(new Uri("/Login.xaml", UriKind.Relative));
         }
 
-        private void Upload(object sender, RoutedEventArgs e) //goes to camera
-        {
-            NavigationService.Navigate(new Uri("/Camera.xaml", UriKind.Relative));
-        }
-
+   
         private void BacktoCollection(object sender, RoutedEventArgs e) //goes to My Collection
         {
-
+            NavigationService.Navigate(new Uri("/Mycollection.xaml", UriKind.Relative));
         }
+
+        private void Camera2(object sender, RoutedEventArgs e)
+        {
+             NavigationService.Navigate(new Uri("/Camera2.xaml", UriKind.Relative));
+        }
+
+        private void Takeaphoto(object sender, RoutedEventArgs e) //goes to camera
+        {
+            NavigationService.Navigate(new Uri("/Camera.xaml", UriKind.Relative));
+        }   
 
       
  

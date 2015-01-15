@@ -38,7 +38,7 @@
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
 
-            <TextBlock HorizontalAlignment="Left" Margin="10,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="436" Height="258" Foreground="#FF0A0000" FontFamily="lato" FontSize="22">
+            <TextBlock HorizontalAlignment="Left" Margin="10,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="436" Height="258" Foreground="#FF0A0000" FontFamily="lato" FontSize="20">
             	<Run Text="Registration Email Sent to user's e-mail."/>
             	<LineBreak/>
             	<Run Text="Check your e-mail for the link to  complete your registration."/>
@@ -47,7 +47,7 @@
             	<LineBreak/>
             	<Run Text="If you don't see this email in your inbox within 15 minutes, look for it in your junk-mail folder. If you find it there, please mark the email as Not Junk and add @vastari.com to your address book."/>
             </TextBlock>
-            <Button Content="Go to your account" HorizontalAlignment="Left" Margin="94,375,0,0" VerticalAlignment="Top" Background="#FF76D6EA" Click="Button_Click_1"/>
+            <Button Content="Go to your account" Background="#FF00BFDF" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato" FontSize="20" HorizontalAlignment="Center" Margin="109,360,104,338" Width="243" Click="Button_Click_1"/>
 
         </Grid>
     </Grid>

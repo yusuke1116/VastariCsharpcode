@@ -25,16 +25,13 @@ namespace PhoneApp2
         // Holds current flash mode.
         private string currentFlashMode;
         MediaLibrary library = new MediaLibrary();
-///
-        ///
-     
+
         public Page5()
         {
             InitializeComponent();
-          
-            
+   
         }
-///
+
         //Code for initialization, capture completed, image availability events; also setting the source for the viewfinder.
         protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
         {
@@ -77,20 +74,12 @@ namespace PhoneApp2
 
                 // Event is fired when the capture sequence is complete and a thumbnail image is available.
                 cam.CaptureThumbnailAvailable += new EventHandler<ContentReadyEventArgs>(cam_CaptureThumbnailAvailable);
-                //extra
-
-               
-
+         
                 // The event is fired when autofocus is complete.
                 cam.AutoFocusCompleted += new EventHandler<CameraOperationCompletedEventArgs>(cam_AutoFocusCompleted);
 
-
-               
-
                 //Set the VideoBrush source to the camera.
-                viewfinderBrush.SetSource(cam);
-        
-              
+                viewfinderBrush.SetSource(cam); 
             }
             else
             {
@@ -125,9 +114,9 @@ namespace PhoneApp2
                 cam.CaptureCompleted -= cam_CaptureCompleted;
                 cam.CaptureImageAvailable -= cam_CaptureImageAvailable;
                 cam.CaptureThumbnailAvailable -= cam_CaptureThumbnailAvailable;
-                //extra
+              
                 cam.AutoFocusCompleted -= cam_AutoFocusCompleted;
-                ////
+            
                 CameraButtons.ShutterKeyHalfPressed -= OnButtonHalfPress;
                 CameraButtons.ShutterKeyPressed -= OnButtonFullPress;
                 CameraButtons.ShutterKeyReleased -= OnButtonRelease;
@@ -135,7 +124,6 @@ namespace PhoneApp2
                
             }
         }
-        ///
         // Update the UI if initialization succeeds.
         void cam_Initialized(object sender, Microsoft.Devices.CameraOperationCompletedEventArgs e)
         {
@@ -151,7 +139,7 @@ namespace PhoneApp2
                 });
             }
         }
-        ///
+ 
         // Ensure that the viewfinder is upright in LandscapeRight.
         protected override void OnOrientationChanged(OrientationChangedEventArgs e)
         {
@@ -180,7 +168,7 @@ namespace PhoneApp2
 
             base.OnOrientationChanged(e);
         }
-        ///
+
         private void ShutterButton_Click(object sender, RoutedEventArgs e)
         {
             if (cam != null)
@@ -207,7 +195,7 @@ namespace PhoneApp2
             savedCounter++;
             
         }
-        ///
+
         // Informs when full resolution photo has been taken, saves to local media library and the local folder.
         void cam_CaptureImageAvailable(object sender, Microsoft.Devices.ContentReadyEventArgs e)
         {
@@ -310,7 +298,7 @@ namespace PhoneApp2
                 e.ImageStream.Close();
             }
         }
-        //extra
+
         // Provide autofocus in the viewfinder.
         private void focus_Clicked(object sender, System.Windows.RoutedEventArgs e)
         {
@@ -340,7 +328,7 @@ namespace PhoneApp2
             }
         }
 
-        //extra
+    
         void cam_AutoFocusCompleted(object sender, CameraOperationCompletedEventArgs e)
         {
             Deployment.Current.Dispatcher.BeginInvoke(delegate()
@@ -353,7 +341,7 @@ namespace PhoneApp2
 
             });
         }
-        //extra
+
         // Provide touch focus in the viewfinder.
         void focus_Tapped(object sender, System.Windows.Input.GestureEventArgs e)
         {
@@ -418,7 +406,7 @@ namespace PhoneApp2
                 MessageBox.Show("Please take a picture for your product before move on");
             }
         }
-///
+
 
         void photoChooserTask_Completed(object sender, PhotoResult e)
         {
@@ -426,10 +414,6 @@ namespace PhoneApp2
             {
                 MessageBox.Show(e.ChosenPhoto.Length.ToString());
 
-                //Code to display the photo on the page in an image control named myImage.
-                //System.Windows.Media.Imaging.BitmapImage bmp = new System.Windows.Media.Imaging.BitmapImage();
-                //bmp.SetSource(e.ChosenPhoto);
-                //myImage.Source = bmp;
             }
         }
 

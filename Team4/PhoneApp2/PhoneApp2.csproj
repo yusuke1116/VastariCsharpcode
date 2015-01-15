@@ -102,6 +102,7 @@
       <DependentUpon>Camera2.xaml</DependentUpon>
     </Compile>
     <Compile Include="DataProtection.cs" />
+    <Compile Include="Helpers\KeyedList.cs" />
     <Compile Include="LocalizedStrings.cs" />
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
@@ -118,6 +119,7 @@
     <Compile Include="MenuPage.xaml.cs">
       <DependentUpon>MenuPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\Photo.cs" />
     <Compile Include="Mycollection.xaml.cs">
       <DependentUpon>Mycollection.xaml</DependentUpon>
     </Compile>
@@ -153,6 +155,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Services\DataService.cs" />
     <Compile Include="Settings.xaml.cs">
       <DependentUpon>Settings.xaml</DependentUpon>
     </Compile>
@@ -162,6 +165,7 @@
     <Compile Include="UploadPhoto2.xaml.cs">
       <DependentUpon>UploadPhoto2.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModels\PhotosViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -276,6 +280,16 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="Assets\samplePic\1.jpg" />
+    <Content Include="Assets\samplePic\10.jpg" />
+    <Content Include="Assets\samplePic\2.jpg" />
+    <Content Include="Assets\samplePic\3.jpg" />
+    <Content Include="Assets\samplePic\4.jpg" />
+    <Content Include="Assets\samplePic\5.jpg" />
+    <Content Include="Assets\samplePic\6.jpg" />
+    <Content Include="Assets\samplePic\7.jpg" />
+    <Content Include="Assets\samplePic\8.jpg" />
+    <Content Include="Assets\samplePic\9.jpg" />
     <Content Include="ServiceReferences.ClientConfig">
       <SubType>Designer</SubType>
     </Content>
@@ -353,6 +367,7 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\VastariAPI\" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

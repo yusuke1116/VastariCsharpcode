@@ -56,17 +56,7 @@ namespace PhoneApp2
                    PhoneApp2.VastariAPI.VastariAPIServiceClient client = new VastariAPI.VastariAPIServiceClient();
                    client.LoginCompleted += clients_login_done;
                    client.LoginAsync(UsrName.Text, PswdBox.Password);
-                  
-              
-                    
-                   /* using (IsolatedStorageFile isoStorage = IsolatedStorageFile.GetUserStoreForApplication())
-                    {
-                        using (IsolatedStorageFileStream stream = isoStorage.OpenFile("pincode.txt", FileMode.Open))
-                        {
-                            NavigationService.Navigate(new Uri("/Login.xaml", UriKind.Relative));
-                        }
-                    }*/
-               //     client.CloseAsync();
+                   client.CloseAsync();
                 }
                 catch (IsolatedStorageException)
                 {
@@ -79,12 +69,7 @@ namespace PhoneApp2
                     MessageBox.Show(ex.Message);
                     return;
                 }
-                
-               // NavigationService.Navigate(new Uri("/Login.xaml", UriKind.Relative));
-            }
-
-            //MessageBox.Show("SET PINCODE","Please set a 4 digit pincode. *You will be asked to enter the code each time you re-open the app",MessageBoxButton.OK);
-           
+            }     
         }
        
         void clients_login_done(object sender, VastariAPI.LoginCompletedEventArgs e)
@@ -93,7 +78,6 @@ namespace PhoneApp2
             try
             {
                 MessageBox.Show("LOGIN SUCCESS");
-                //MessageBox.Show(e.Result.ToString());
                 using (IsolatedStorageFile isoStorage = IsolatedStorageFile.GetUserStoreForApplication())
                 {
                     using (IsolatedStorageFileStream stream = isoStorage.OpenFile("pincode.txt", FileMode.Open))
@@ -106,13 +90,6 @@ namespace PhoneApp2
             {
                 MessageBox.Show("login error! id OR password is different!");
             }
-           /* using (IsolatedStorageFile isoStorage = IsolatedStorageFile.GetUserStoreForApplication())
-            {
-                using (IsolatedStorageFileStream stream = isoStorage.OpenFile("pincode.txt", FileMode.Open))
-                {
-                    NavigationService.Navigate(new Uri("/Login.xaml", UriKind.Relative));
-                }
-            }*/
 
         }
 

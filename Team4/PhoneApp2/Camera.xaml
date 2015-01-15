@@ -39,12 +39,12 @@
 
         <!--Button StackPanel to the right of viewfinder>-->
         <StackPanel Grid.Column="1" >
-            <Button x:Name="ShutterButton" Content="SH" Click="ShutterButton_Click"  FontWeight="ExtraBold" Background="#FF00BFDF" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato" FontSize="25"  />
+            <Button x:Name="ShutterButton" Content="Capture" Click="ShutterButton_Click" Background="#FF00BFDF" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato" FontSize="25"  />
 
 
-            <Button x:Name="AFButton" Content="AF" Click="focus_Clicked" FontWeight="ExtraBold" Background="#FF00BFDF" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato" FontSize="25"/>
+            <Button x:Name="AFButton" Content="Focus" Click="focus_Clicked" Background="#FF00BFDF" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato" FontSize="25"/>
             <Button Name="FlashButton" Content="Flash" Click="changeFlash_Clicked" Background="#FF00BFDF" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato" FontSize="25"  />
-            <Button x:Name ="Next" Content="Next" Click ="Next_Clicked"  FontWeight="ExtraBold" Background="#FF00BFDF" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato" FontSize="25"/>
+            <Button x:Name ="Next" Content="Next" Click ="Next_Clicked" Background="#FF00BFDF" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato" FontSize="25"/>
         </StackPanel>
 
         <!--Used for debugging >-->

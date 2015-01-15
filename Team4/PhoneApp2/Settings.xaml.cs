@@ -33,37 +33,7 @@ namespace PhoneApp2
             NavigationService.Navigate(new Uri("/Login.xaml", UriKind.Relative));
         }
 
-        /*private byte[] ReadPinFromFile()
-        {
-            // Access the file in the application's isolated storage.
-            IsolatedStorageFile readfile = IsolatedStorageFile.GetUserStoreForApplication();
-            IsolatedStorageFileStream readstream = new IsolatedStorageFileStream("pincode.txt", System.IO.FileMode.Open, FileAccess.Read, readfile);
-
-            // Read the PIN from the file.
-            Stream reader = new StreamReader(readstream).BaseStream;
-            byte[] pinArray = new byte[reader.Length];
-
-            reader.Read(pinArray, 0, pinArray.Length);
-            reader.Close();
-            readstream.Close();
-
-            return pinArray;
-        }
-
-        private void WritePinToFile(byte[] pinData)
-        {
-            // Create a file in the application's isolated storage.
-            IsolatedStorageFile writefile = IsolatedStorageFile.GetUserStoreForApplication();
-            IsolatedStorageFileStream writestream = new IsolatedStorageFileStream("pincode.txt", System.IO.FileMode.Create, System.IO.FileAccess.Write, writefile);
-
-            // Write pinData to the file.
-            Stream writer = new StreamWriter(writestream).BaseStream;
-            writer.Write(pinData, 0, pinData.Length);
-            writer.Close();
-            writestream.Close();
-        }*/
-
-
+       
 
         private void Confirm(object sender, RoutedEventArgs e)
         {
@@ -84,9 +54,7 @@ namespace PhoneApp2
                     }
                     else
                     {
-                        //add this---> set OldPin(MainPage)=NewPin
-                        // Retrieve the PIN from isolated storage.
-                        //byte[] ProtectedPinByte = this.ReadPinFromFile();
+                        
                         DataProtection readdata = new DataProtection();
                         byte[] ProtectedPinByte = readdata.ReadPinFromFile();
              
@@ -123,43 +91,7 @@ namespace PhoneApp2
                     }
                 }
             }
-           // catch(Exception ex){
-           //         MessageBox.Show(ex.ToString());
-           // }
-        
-                    /*add 26/11 Yusuke
-                    using (IsolatedStorageFile isoStorage = IsolatedStorageFile.GetUserStoreForApplication())
-                    {
-                        using (IsolatedStorageFileStream stream = isoStorage.OpenFile("pincode.txt", FileMode.Open))
-                        {
-                            using (StreamReader reader = new StreamReader(stream))
-                            {
-                                if (OldPin.Text != reader.ReadLine())
-                                {
-                                    MessageBox.Show(reader.ReadLine());
-                                    MessageBox.Show("Old pincode does not match!");
-                                    return;
-                                }
-                            }
-                        }
-                    }
-
-                    using (IsolatedStorageFile WisoStorage = IsolatedStorageFile.GetUserStoreForApplication())
-                    {
-                        using (IsolatedStorageFileStream Wstream = WisoStorage.OpenFile("pincode.txt", FileMode.Open, FileAccess.Write))
-                        {
-                            using (StreamWriter writer = new StreamWriter(Wstream))
-                            {
-                                writer.WriteLine(NewPin.Text);
-                                writer.Close();
-                                MessageBox.Show("You successfully changed your pincode!");
-                            }
-                        }
-                    }*/
-                    //MessageBox.Show("You successfully changed your pincode!");
-                    //return;
-       // }
-        // confirm method end
+           
     }
 
 }

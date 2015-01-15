@@ -19,7 +19,7 @@ namespace PhoneApp2
             source.Add("Mr.");
             source.Add("Ms.");
             source.Add("Mrs.");
-            source.Add("Dr.");
+            source.Add("Dr");
             this.listPicker.ItemsSource = source;
         }
 
@@ -30,10 +30,10 @@ namespace PhoneApp2
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-           //S NavigationService.Navigate(new Uri("/Registration3.xaml", UriKind.Relative));
+           
             if (zip.Text == ""| FstName.Text == "" | LstName.Text == "" | Country.Text == "" | City.Text == "")
             {
-                MessageBox.Show("please fill the mandatory position");
+                MessageBox.Show("Please fill the mandatory fields.");
                 return;
             }
             else
@@ -46,8 +46,6 @@ namespace PhoneApp2
         {
             NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
         }
-
-
 
     }
 }

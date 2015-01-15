@@ -36,10 +36,10 @@
             	<LineBreak/>
             	<Run Text="Success! Your e-mail has been confirmed."/>
             </TextBlock>
-            <Button Content="Go to your account" HorizontalAlignment="Left" Margin="93,279,0,0" VerticalAlignment="Top" Background="#FF76D6EA" Click="Button_Click_1"/>
-            <Button Content="Home" HorizontalAlignment="Left" Margin="0,-73,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.86,-2.244" Background="#FF76D6EA" Click="Button_Click"/>
+            <Button Content="Go to your account" Background="#FF00BFDF" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato" FontSize="20" HorizontalAlignment="Center" Margin="118,223,117,405" Width="221" Click="Button_Click_1"/>
 
         </Grid>
+        <Button Content="Home" Background="#FF00BFDF" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato" FontSize="20" HorizontalAlignment="Center" Margin="1,0,364,0" Width="115" Click="Button_Click_1"/>
     </Grid>
 
 </phone:PhoneApplicationPage>

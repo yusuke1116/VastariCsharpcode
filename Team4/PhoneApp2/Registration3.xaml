@@ -31,9 +31,9 @@
             </StackPanel>
         </Grid>
         <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="14,82,10,-82" Background="White">
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="14,82,10,10" Background="White">
             <TextBlock HorizontalAlignment="Left" Margin="0,90,0,0" TextWrapping="Wrap" Text="Area of Interest *" VerticalAlignment="Top" Width="222"/>
-            <CheckBox x:Name="Fine_Art" Content="FINE ART" HorizontalAlignment="Left" Margin="0,122,0,0" VerticalAlignment="Top" FontSize="18" Foreground="#FF060000" BorderBrush="Black" Checked="Fine_Art_Checked" Background="Gray"/>
+            <CheckBox x:Name="Fine_Art" Content="FINE ART" HorizontalAlignment="Left" Margin="0,122,0,0" VerticalAlignment="Top" FontSize="18" Foreground="#FF060000" BorderBrush="Black" Background="Gray"/>
             <CheckBox x:Name="Antiques" Content="ANTIQUES" HorizontalAlignment="Left" Margin="163,122,0,0" VerticalAlignment="Top" FontSize="18" Foreground="#FF170202" BorderBrush="Black" Background="Gray" />
             <CheckBox x:Name="Artefacts" Content="ARTEFACTS" HorizontalAlignment="Left" Margin="0,199,0,0" VerticalAlignment="Top" FontSize="18" Foreground="#FF060000" BorderBrush="Black" Background="Gray"/>
             <CheckBox x:Name="Memorabilia" Content="MEMORABILIA" HorizontalAlignment="Left" Margin="163,199,0,0" VerticalAlignment="Top" FontSize="18" Foreground="#FF1D0101" BorderBrush="Black" Background="Gray"/>
@@ -42,13 +42,13 @@
                     <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
                 </CheckBox.BorderBrush>
             </CheckBox>
-            <CheckBox x:Name="Agree" Content="I agree to Vastari.com's " HorizontalAlignment="Left" Margin="0,360,0,0" VerticalAlignment="Top" Foreground="#FF000000" BorderBrush="Black" Checked="Agree_Checked" ClickMode="Press" Background="Gray" FontFamily="lato" FontSize="20"/>
-            <TextBlock HorizontalAlignment="Left" Margin="10,437,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="421" Height="85" Foreground="#FF0F0000" FontFamily="lato" FontSize="22">
+            <CheckBox x:Name="Agree" Content="I agree to Vastari.com's " HorizontalAlignment="Left" Margin="0,360,0,0" VerticalAlignment="Top" Foreground="#FF000000" BorderBrush="Black"  ClickMode="Press" Background="Gray" FontFamily="lato" FontSize="20"/>
+            <TextBlock HorizontalAlignment="Left" Margin="10,437,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="421" Height="104" Foreground="#FF0F0000" FontFamily="lato" FontSize="20">
             	<Run Text="Vastari is committed to protecting the privacy of "/>
-            	<Run Text="the users of its website. By submitting this registration you are"/>
+            	<Run Text="the users of its website. By submitting this registration from you are agreeing to our"/>
             </TextBlock>
-            <HyperlinkButton x:Name="Term" Content="Term's&amp;Condition" HorizontalAlignment="Left" Margin="258,383,0,0" VerticalAlignment="Top" Click="HyperlinkButton_Click" Foreground="Blue" FontFamily="lato" FontSize="20"/>
-            <HyperlinkButton x:Name="Privacy" Content="Privacy Policy" HorizontalAlignment="Left" Margin="135,527,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.43,0.5" Click="HyperlinkButton1_Click" Foreground="Blue" FontFamily="lato" FontSize="20"/>
+            <HyperlinkButton x:Name="Term" Content="Terms&amp;Conditions" HorizontalAlignment="Left" Margin="251,384,0,0" VerticalAlignment="Top" Click="HyperlinkButton_Click" Foreground="Blue" FontFamily="lato" FontSize="20"/>
+            <HyperlinkButton x:Name="Privacy" Content="Privacy Policy" HorizontalAlignment="Left" Margin="-4,517,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.43,0.5" Click="HyperlinkButton1_Click" Foreground="Blue" FontFamily="lato" FontSize="20" Width="148"/>
             <Button Content="Back" HorizontalAlignment="Left" Margin="240,614,0,0" VerticalAlignment="Top" Click="Button_Click" Foreground="White" Background="#FF00BFDF" FontFamily="lato" FontSize="22" Width="99" Height="72"/>
             <Button Content="Submit" HorizontalAlignment="Left" Margin="339,614,-3,0" VerticalAlignment="Top" Click="Button_Click_1" Foreground="White" Background="#FF00BFDF" FontSize="22" FontFamily="lato" Width="120" Height="72"/>
             <toolkit:ListPicker ExpansionMode="ExpansionAllowed"  x:Name="listPicker" 
@@ -60,7 +60,6 @@
                     <TextBlock Text="What would you describe yourself as?*" Foreground="Black" />
                 </toolkit:ListPicker.Header>
             </toolkit:ListPicker>
-            <TextBlock HorizontalAlignment="Left" Margin="10,527,0,0" TextWrapping="Wrap" Text="agree to our" VerticalAlignment="Top" Width="131" FontFamily="lato" Foreground="Black" FontSize="22"/>
 
         </Grid>
     </Grid>
