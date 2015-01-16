@@ -32,13 +32,6 @@ namespace PhoneApp2
            scroll.ScrollTo(scroll.ItemsSource[scroll.ItemsSource.Count - 1]);
         }
 
-
-
-        private void Undo(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Uri("/MenuPage.xaml", UriKind.Relative));
-        }
-
         private void layout_LayoutUpdated_1(object sender, EventArgs e)
         {
 
@@ -54,6 +47,18 @@ namespace PhoneApp2
 
         }
 
+        private void Upload(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/UploadPhoto.xaml", UriKind.Relative));
+        }
+        private void Menu(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/MenuPage.xaml", UriKind.Relative));
+        }
+        private void Home(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Login.xaml", UriKind.Relative));
+        }
         
     }
 }

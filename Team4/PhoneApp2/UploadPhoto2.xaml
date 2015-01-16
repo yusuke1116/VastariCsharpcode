@@ -28,29 +28,14 @@
             <TextBlock TextWrapping="Wrap" Text="VASTARI" Foreground="Black" FontFamily="Lato"/>
             <TextBlock TextWrapping="Wrap" Text="Welcome, USER" Foreground="Black" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato"/>
         </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="34" Margin="0,140.667,0,0" VerticalAlignment="Top" Width="470" Grid.Row="2">
-            <TextBlock TextWrapping="Wrap" Text="Upload Object" Foreground="Black" HorizontalAlignment="Center" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato"/>
+        <StackPanel HorizontalAlignment="Left" Height="43" Margin="8,171,0,0" VerticalAlignment="Top" Width="470" Grid.Row="2">
+            <TextBlock TextWrapping="Wrap" Text="Upload Object" Foreground="Black" HorizontalAlignment="Center" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato" Margin="172,0,135,0" Width="163"/>
         </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="34" Margin="10,179.667,0,0" VerticalAlignment="Top" Width="146" Grid.Row="2">
-            <TextBlock TextWrapping="Wrap" Text="Member No:123" Foreground="Black" FontSize="18" HorizontalAlignment="Center" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato"/>
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Right" Height="34" Margin="0,179.667,0,0" VerticalAlignment="Top" Width="141" Grid.Row="2">
-            <TextBlock TextWrapping="Wrap" Text="3/5 Objects" Foreground="Black" Margin="0,0,-1,0" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato"/>
-        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="34" Margin="10,179.667,0,0" VerticalAlignment="Top" Width="146" Grid.Row="2"/>
         <StackPanel HorizontalAlignment="Left" Height="74" Margin="10,66.667,0,0" VerticalAlignment="Top" Width="127" Grid.Row="2">
-            <Button Content="Home" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="7,0,10,0" Width="110" Click="Home" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato" FontSize="20">
-                <Button.Background>
-                    <SolidColorBrush Color="#FF00BFDF"/>
-                </Button.Background>
-            </Button>
+            <Button Content="Home" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Home" Background="#FF00BFDF" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato" FontSize="20" Width="115" Height="70"/>
         </StackPanel>
-        <StackPanel HorizontalAlignment="Right" Height="69" Margin="0,71.667,10,0" VerticalAlignment="Top" Width="100" Grid.Row="2">
-            <Button Content="Menu" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-24,0,0,0" Width="124" Click="Menu" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato" FontSize="20">
-                <Button.Background>
-                    <SolidColorBrush Color="#FF00BFDF"/>
-                </Button.Background>
-            </Button>
-        </StackPanel>
+        <StackPanel HorizontalAlignment="Right" Height="69" Margin="0,71.667,10,0" VerticalAlignment="Top" Width="100" Grid.Row="2"/>
         <StackPanel HorizontalAlignment="Center" Height="105" Margin="10,219,10,0" Grid.Row="2" VerticalAlignment="Top" Width="460">
             <TextBlock TextWrapping="Wrap" Height="100" Foreground="Black" HorizontalAlignment="Center" Text="Your object has been saved successfully. Your object reference number is XX123. Please upload a photo of your object." FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato"/>
         </StackPanel>
@@ -72,6 +57,9 @@
             </TextBlock>
             <HyperlinkButton TargetName="_blank" Content="Click here to go to Vastari website." NavigateUri="https://www.vastari.com/my_collection.aspx?my=true" Height="71" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato" Margin="10,0" Width="440" Foreground="Black" />
         </StackPanel>
+        <TextBlock TextWrapping="Wrap" Text="Member No:123" Foreground="Black" FontSize="20" HorizontalAlignment="Center" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato" Margin="10,133,322,593" Grid.Row="2" Width="148"/>
+        <TextBlock TextWrapping="Wrap" Text="3/5 Objects" Foreground="Black" Margin="355,134,16,0" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato" Grid.Row="2" RenderTransformOrigin="0.5,1.636" Width="109"/>
+        <Button Content="Menu" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,72,10,0" Width="115" Click="Menu" Background="#FF00BFDF" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato" FontSize="20" Height="70" Grid.Row="2" />
     </Grid>
 
 

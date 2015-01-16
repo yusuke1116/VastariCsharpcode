@@ -34,7 +34,7 @@ namespace PhoneApp2
         }
         private void Confirm(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new Uri("/MyCollection.xaml", UriKind.Relative)); 
         }
 
         void photoChooserTask_Completed(object sender, PhotoResult e)

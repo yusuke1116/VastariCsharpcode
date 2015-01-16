@@ -38,15 +38,21 @@ namespace PhoneApp2
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
            
-            if (Agree.IsChecked== true)
+            if (Agree.IsChecked== true&&(Fine_Art.IsChecked == true || Memorabilia.IsChecked == true || Artefacts.IsChecked == true || Antiques.IsChecked == true || Other.IsChecked == true))
             {
                 NavigationService.Navigate(new Uri("/Registration4.xaml", UriKind.Relative));
             }
+            else if (Agree.IsChecked == false && (Fine_Art.IsChecked == true || Memorabilia.IsChecked == true || Artefacts.IsChecked == true || Antiques.IsChecked == true || Other.IsChecked == true))
+            {
+                MessageBox.Show("ERROR", "Please agree to the terms & conditions.", MessageBoxButton.OK);
+            }
             else
             {
-                MessageBox.Show("ERROR", "Please agree the terms & conditions.", MessageBoxButton.OK);
+                MessageBox.Show("ERROR", "Please select an area of interest.", MessageBoxButton.OK);
             }
-            //NavigationService.Navigate(new Uri("/Registration4.xaml", UriKind.Relative));
+
+            
+            
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)

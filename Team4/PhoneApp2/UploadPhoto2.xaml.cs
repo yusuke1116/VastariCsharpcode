@@ -30,7 +30,7 @@ namespace PhoneApp2
    
         private void BacktoCollection(object sender, RoutedEventArgs e) //goes to My Collection
         {
-            NavigationService.Navigate(new Uri("/Mycollection.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/MyCollection.xaml", UriKind.Relative));
         }
 
         private void Camera2(object sender, RoutedEventArgs e)

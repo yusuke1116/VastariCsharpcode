@@ -39,7 +39,7 @@
                                        Foreground="{Binding Converter={StaticResource ForegroundConverter}}"                                       
                                        FontFamily="{StaticResource PhoneFontFamilySemiBold}"
                                        FontSize="28"
-                                       Padding="2"
+                                       Padding=""
                                        VerticalAlignment="Bottom"/>
                             </Border>
                         </DataTemplate>
@@ -49,12 +49,12 @@
         <DataTemplate x:Key="GroupHeader">
             <Border Background="Transparent">
                 <Border Background="#FF00BFDF" BorderBrush="Transparent" BorderThickness="1"	
-                        Width="470" Height="90" 				 
+                        Width="470" Height="60" 				 
                         HorizontalAlignment="Left">
                     <TextBlock Text="{Binding Key}" 
                                Foreground="white" 
-                               FontSize="28"
-                               Margin="0,20,190,20"
+                               FontSize="20"
+                               Margin="0,0,190,0"
                                Padding="2"                                
                                FontFamily="{StaticResource PhoneFontFamilySemiLight}"
                                HorizontalAlignment="Left"
@@ -79,29 +79,42 @@
       
 
         <!--TitlePanel contains the name of the application and page title-->
-        <StackPanel Grid.Row="0">
-            <TextBlock TextWrapping="Wrap" Text="Collections" Foreground="Black" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato" FontSize="20" Height="28" Margin="190,0,190,0"/>
+        
 
-            <phone:LongListSelector Name="scroll"
-                                        ItemsSource="{Binding GroupedPhotos}"
-                                        ItemTemplate="{StaticResource ItemTemplate}"                     
-                                        Height="600"
-                                        Width="470"
-                                        IsGroupingEnabled="True"
-                                        GroupHeaderTemplate="{StaticResource GroupHeader}"
-                                        JumpListStyle="{StaticResource JumpListStyle}" 
-                                        LayoutMode="Grid" 
-                                        GridCellSize="108,108" />
-                 <Button x:Name="UndoEverything" Content="Undo" Background="#FF00BFDF" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato" FontSize="25" Click="Undo" />
+
+            <StackPanel HorizontalAlignment="Left" Height="70" VerticalAlignment="Top" Width="460">
+                <TextBlock TextWrapping="Wrap" Text="VASTARI" Foreground="Black" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato" FontSize="20"/>
+                <TextBlock TextWrapping="Wrap" Text="Welcome, USER" Foreground="Black" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato" FontSize="20"/>
+            </StackPanel>
+
+            <Button Content="Home" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Home" Background="#FF00BFDF" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato" FontSize="20" Width="115" Height="70" Margin="5,54,0,0"/>
+
+      
+            <phone:LongListSelector x:Name="scroll"
+        		ItemsSource="{Binding GroupedPhotos}"
+        		ItemTemplate="{StaticResource ItemTemplate}"
+        		IsGroupingEnabled="True"
+        		GroupHeaderTemplate="{StaticResource GroupHeader}"
+        		JumpListStyle="{StaticResource JumpListStyle}" 
+        		LayoutMode="Grid" 
+        		GridCellSize="108,108" Margin="5,225,0,89" />
+        <Button Content="Menu" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,54,10,0" Width="115" Click="Menu" Background="#FF00BFDF" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato" FontSize="20" Height="70" />
+        <TextBlock TextWrapping="Wrap" Text="Member No:123" Foreground="Black" FontSize="20" HorizontalAlignment="Left" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato" Width="157" Margin="10,124,0,614"/>
+        <StackPanel HorizontalAlignment="Right" Height="34" Margin="0,120,10,0" VerticalAlignment="Top" Width="141">
+            <TextBlock TextWrapping="Wrap" Text="3/5 Objects" Foreground="Black" Margin="0,0,24,0" FontSize="20" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato" HorizontalAlignment="Right"/>
         </StackPanel>
-        
-               
-        
+        <TextBlock TextWrapping="Wrap" Text="My Collection" Foreground="Black" HorizontalAlignment="Center" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato" FontSize="20" Margin="170,159,180,579" RenderTransformOrigin="0.5,7.792" Width="130"/>
+        <TextBlock TextWrapping="Wrap" Text="My Objects" Foreground="Black" HorizontalAlignment="Left" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato" FontSize="20" TextDecorations="Underline" Margin="10,196,0,548"/>
+        <Button Content="UPLOAD OBJECT" Click="Upload" Background="#FF00BFDF" Margin="0,684,20,10" FontFamily="Lato" FontSize="20"/>
 
-       
-       
-            
-          
+
+
+
+
+
+
+
+
 
         <!--ContentPanel - place additional content here-->
     </Grid>

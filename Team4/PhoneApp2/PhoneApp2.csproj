@@ -120,9 +120,7 @@
       <DependentUpon>MenuPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\Photo.cs" />
-    <Compile Include="Mycollection.xaml.cs">
-      <DependentUpon>Mycollection.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="MyCollection.xaml.cs" />
     <Compile Include="PinCode.xaml.cs">
       <DependentUpon>PinCode.xaml</DependentUpon>
     </Compile>
@@ -200,7 +198,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Mycollection.xaml">
+    <Page Include="MyCollection.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

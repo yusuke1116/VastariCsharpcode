@@ -19,12 +19,12 @@ namespace PhoneApp2
 
         private void MyCollection(object sender, RoutedEventArgs e) //go to my collection
         {
-            NavigationService.Navigate(new Uri("/Mycollection.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/MyCollection.xaml", UriKind.Relative));
         }
 
         private void Upload(object sender, RoutedEventArgs e) //go to upload object
         {
-            NavigationService.Navigate(new Uri("/UploadPhoto2.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/UploadPhoto.xaml", UriKind.Relative));
         }
 
         private void Settings(object sender, RoutedEventArgs e) //go to settings

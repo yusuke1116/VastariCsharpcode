@@ -65,7 +65,7 @@
             <toolkit:ListPicker ExpansionMode="ExpansionAllowed" x:Name="listPicker" FullModeHeader="Full mode Header"  
              CacheMode="BitmapCache" 
              BorderBrush="Black"            
-             Background="{x:Null}" Foreground="Black" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato" Margin="10,11,0,286" FontSize="20" Width="374" HorizontalAlignment="Left" Grid.RowSpan="4" Grid.Row="1" Grid.ColumnSpan="3" >
+             Background="{x:Null}" Foreground="Black" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato" Margin="10,0,0,297" FontSize="20" Width="374" HorizontalAlignment="Left" Grid.RowSpan="4" Grid.Row="1" Grid.ColumnSpan="3" >
                 <toolkit:ListPicker.Header>
                     <TextBlock Text="Title*" Foreground="Black" />
                 </toolkit:ListPicker.Header>
