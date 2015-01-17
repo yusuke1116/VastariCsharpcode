@@ -16,6 +16,12 @@ namespace PhoneApp2
         List<String> name;
         List<String> subitems;
         List<String> subitems2;
+
+        List<List<List<String>>> layer1;
+        List<List<String>> layer2;
+        List<String> layer3;
+        String[] layer = { "Fine Art", "Antiques", "Artefacts", "Design", "Memorabilia", "Currencies,Documents and Stamps", "Natural Objects", "Miscellaneous" };
+
         public Page3()
         {
             InitializeComponent();
@@ -26,7 +32,6 @@ namespace PhoneApp2
                 items.Add("Design");
                 items.Add("Memorabilia");
                 items.Add("Currencies,Documents and Stamps");
-                items.Add("Musical Intruments");
                 items.Add("Natural Objects");
                 items.Add("Miscellaneous");
         
@@ -34,19 +39,32 @@ namespace PhoneApp2
             this.Category.ItemsSource = items;
 
             name = new List<String>();
+            name.Add("SELECT");
             name.Add("Artistname");
+            name.Add("Anonymous");
+            name.Add("Unknown");
            
 
             this.Artist.ItemsSource = name;
-            
-
-        
 
         }
        
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/UploadPhoto2.xaml", UriKind.Relative)); 
+            if (Title.Text == "")
+            {
+                MessageBox.Show("Please give a title.");
+            }
+            else if ((Artist1.Text == "")&&(Artist.SelectedItem=="SELECT"))
+            {
+                MessageBox.Show("Please select an artist.");
+            }
+            else
+            {
+
+
+                NavigationService.Navigate(new Uri("/UploadPhoto2.xaml", UriKind.Relative));
+            }
         }
 
     
@@ -57,9 +75,7 @@ namespace PhoneApp2
              switch (item)
             {
 
-                 case "Musical Intruments": 
-                    break;
-                case "Natural Objects":
+                  case "Natural Objects":
                     subitems.Add("Fossils");
                     subitems.Add("Taxidermy");
                     subitems.Add("Microbiology");
@@ -67,8 +83,11 @@ namespace PhoneApp2
                     subitems.Add("Living specimens");
                     subitems.Add("Other");
                     break;
-                case "Miscellaneous":      
+              //ok
+                 case "Miscellaneous":
+                    subitems.Add("Miscellaneous");
                     break; 
+                //ok
                  case "Currencies,Documents and Stamps":
                     subitems.Add("Stamps");
                     subitems.Add("Coins");
@@ -77,7 +96,8 @@ namespace PhoneApp2
                     subitems.Add("Documents");
                     subitems.Add("Other");
                     break;
-                case "Memorabilia":
+              //ok
+                 case "Memorabilia":
                     subitems.Add("Tourism & Travel");
                     subitems.Add("Costume & Outfits ");
                     subitems.Add("Entertainment");
@@ -85,6 +105,8 @@ namespace PhoneApp2
                     subitems.Add("Medals");
                     subitems.Add("Miscellaneous");
                     break;         
+                
+                 //ok
                  case "Fine Art":
                    subitems.Add("Paintings");
                    subitems.Add("Drawings");
@@ -95,7 +117,8 @@ namespace PhoneApp2
                    subitems.Add("Installation/Performance");
                    subitems.Add("Calligraphy");
                     break;
-                case "Antiques":
+               //ok
+                 case "Antiques":
                     subitems.Add("Ceramics");
                     subitems.Add("Furniture");
                     subitems.Add("Glassware");
@@ -104,11 +127,13 @@ namespace PhoneApp2
                     subitems.Add("Textiles");
                     subitems.Add("Lighting");
                     break;
-                case "Artefacts":
+               //ok
+                 case "Artefacts":
                     subitems.Add("Cultural & Religious Relics");
                     subitems.Add("Scientific Instruments");
                     subitems.Add("Arms & Armour"); 
                     break;
+                     //ok
                 case "Design":
                     subitems.Add("Fashion");
                     subitems.Add("Gems & Jewellery");
@@ -119,13 +144,65 @@ namespace PhoneApp2
                     break;      
             }
              this.Sub.ItemsSource = subitems;
-
-             String subitem = Sub.SelectedItem.ToString();
+        }
+        private void Change2(object sender, SelectionChangedEventArgs e)
+        {
+            String subitem = (sender as ListPicker).SelectedItem.ToString();
 
              subitems2 = new List<String>();
              switch (subitem)
              {
 
+                 case "Fossils":
+                     subitems2.Add("Fossils");
+                     break;
+                 case "Taxidermy":
+                     subitems2.Add("Taxidermy");
+                     break;
+                 case "Microbiology":
+                     subitems2.Add("Microbiology");
+                     break;
+                 case "Geological":
+                     subitems2.Add("Geological");
+                     break;
+                 case "Living specimens":
+                     subitems2.Add("Living specimens");
+                     break;
+       
+                 case "Stamps":
+                     subitems2.Add("Stamps");
+                     break;
+                 case "Coins":
+                     subitems2.Add("Coins");
+                     break;
+                 case "Notes":
+                     subitems2.Add("Notes");
+                     break;
+                 case "Letters":
+                     subitems2.Add("Letters");
+                     break;
+                 case "Documents":
+                     subitems2.Add("Documents");
+                     break;
+               
+                 case "Tourism & Travel":
+                    subitems2.Add("Tourism & Travel");
+                    break;
+                 case "Costume & Outfits":
+                    subitems2.Add("Costume & Outfits");
+                    break;
+                 case "Entertainment":
+                    subitems2.Add("Entertainment");
+                    break;
+                 case "Ephemera":
+                    subitems2.Add("Ephemera");
+                    break;
+                 case "Medals":
+                    subitems2.Add("Medals");
+                    break;
+                 case "Miscellaneous":
+                    subitems2.Add("Miscellaneous");
+                    break;
                  case "Paintings":
                      subitems2.Add("Oil");
                      subitems2.Add("Acr");
@@ -239,7 +316,7 @@ namespace PhoneApp2
                      subitems2.Add("Platinum");
                      subitems2.Add("Spelter");
                      subitems2.Add("Iron");
-                     subitems2.Add("Other "); 
+                     subitems2.Add("Other ");
                      break;
                  case "Horology":
                      subitems2.Add("Mechanical Clocks");
@@ -302,17 +379,28 @@ namespace PhoneApp2
                      subitems2.Add("Costume");
                      subitems2.Add("Other");
                      break;
-                   
+                 case "Decorative Objects":
+                     subitems2.Add("Decorative Objects");
+                     break;
+                 case "Models":
+                     subitems2.Add("Models");
+                     break;
+                 case "Other":
+                     subitems2.Add("Other");
+                     break;
+                    
+
              }
              this.Sub2.ItemsSource = subitems2;
             
+             
         }
        
            
     
         private void ADD(object sender, RoutedEventArgs e) {
 
-           name.Add(Title_Copy.Text);
+           name.Add(Artist1.Text);
             this.Artist.ItemsSource = name;
 
 

@@ -157,9 +157,7 @@
     <Compile Include="Settings.xaml.cs">
       <DependentUpon>Settings.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UploadPhoto.xaml.cs">
-      <DependentUpon>UploadPhoto.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="UploadPhoto.xaml.cs" />
     <Compile Include="UploadPhoto2.xaml.cs">
       <DependentUpon>UploadPhoto2.xaml</DependentUpon>
     </Compile>

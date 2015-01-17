@@ -51,7 +51,7 @@ namespace PhoneApp2
                     byte[] ProtectedPinByte = ProtectedData.Protect(PinByte, null);
                     writedata.WritePinToFile(ProtectedPinByte);
                     MessageBox.Show("Your pincode is set!");
-                    NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
+                    NavigationService.Navigate(new Uri("/Login.xaml", UriKind.Relative));
                     return;
                 }
                 else
@@ -74,7 +74,7 @@ namespace PhoneApp2
                     return;
                 } 
 
-                NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative)); //Work Normally
+                NavigationService.Navigate(new Uri("/Login.xaml", UriKind.Relative)); //Work Normally
 
                 /*using (IsolatedStorageFileStream stream = isoStorage.OpenFile("pincode.txt", FileMode.OpenOrCreate))
                 {
@@ -92,7 +92,7 @@ namespace PhoneApp2
             catch (IsolatedStorageException)
             {
                 MessageBox.Show("IsolatedStorageException");
-                NavigationService.Navigate(new Uri("/MenuPage.xaml", UriKind.Relative));
+                NavigationService.Navigate(new Uri("/Login.xaml", UriKind.Relative));
             }
             catch (ArgumentNullException)
             {

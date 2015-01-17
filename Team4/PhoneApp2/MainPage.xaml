@@ -49,7 +49,7 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0" Background="White">
-            <Button Content="ABOUT US" HorizontalAlignment="Left" Margin="159,5,0,0" VerticalAlignment="Top" Click="AboutUs" Foreground="White" FontFamily="Lato" FontSize="23" Width="160" Height="70">
+            <Button Content="ABOUT US" HorizontalAlignment="Left" Margin="150,8,0,0" VerticalAlignment="Top" Click="AboutUs" Foreground="White" FontFamily="Lato" FontSize="23" Width="178" Height="70">
                 <Button.Background>
                     <SolidColorBrush Color="{StaticResource VASTARI}"/>
                 </Button.Background>
@@ -82,30 +82,30 @@
             	<LineBreak/>
             	<Run/>
             </TextBlock>
-            <TextBox x:Name="UsrName" HorizontalAlignment="Left" Height="70" Margin="10,473,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230">
+            <TextBox x:Name="UsrName" HorizontalAlignment="Left" Height="70" Margin="0,449,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230">
                 <TextBox.Background>
                     <SolidColorBrush Color="{StaticResource V_box}"/>
                 </TextBox.Background>
             </TextBox>
-            <TextBlock HorizontalAlignment="Left" Margin="10,444,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Lato">
+            <TextBlock HorizontalAlignment="Left" Margin="10,432,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Lato">
             	<Run Text="Username:"/>
 
             </TextBlock>
-            <TextBlock HorizontalAlignment="Left" Margin="10,538,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Lato">
+            <TextBlock HorizontalAlignment="Left" Margin="10,519,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Lato">
             	<Run Text="Password:"/>
 
             </TextBlock>
-            <PasswordBox x:Name="PswdBox" HorizontalAlignment="Left" Margin="10,567,0,0" VerticalAlignment="Top" Width="230" Height="70">
+            <PasswordBox x:Name="PswdBox" HorizontalAlignment="Left" Margin="0,548,0,0" VerticalAlignment="Top" Width="230" Height="70">
                 <PasswordBox.Background>
                     <SolidColorBrush Color="{StaticResource V_box}"/>
                 </PasswordBox.Background>
             </PasswordBox>
-            <Button Content="LOGIN" HorizontalAlignment="Left" Margin="159,639,0,0" VerticalAlignment="Top" Width="149" Click="Login" Foreground="White" FontFamily="Lato">
+            <Button Content="LOGIN" HorizontalAlignment="Left" Margin="159,618,0,0" VerticalAlignment="Top" Width="149" Click="Login" Foreground="White" FontFamily="Lato">
                 <Button.Background>
                     <SolidColorBrush Color="{StaticResource VASTARI}"/>
                 </Button.Background>
             </Button>
-
+            <HyperlinkButton TargetName="_blank" Content="Forgot your password or username? Click here." NavigateUri="https://www.vastari.com/forgot_password.aspx" Height="53" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato" Margin="6,670,10,0" Width="440" Foreground="Black" />
         </Grid>
         <Image HorizontalAlignment="Left" Height="768" Grid.RowSpan="2" Width="480" Source="/Assets/RP-T-1952-278.jpg" Opacity="0.3" VerticalAlignment="Top" Stretch="UniformToFill" Visibility="Collapsed"/>
 

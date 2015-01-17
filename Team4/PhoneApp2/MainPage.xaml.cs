@@ -70,7 +70,7 @@ namespace PhoneApp2
                 {
                     MessageBox.Show("1st time Login", "Please set a 4 digit pincode.", MessageBoxButton.OK);
                     NavigationService.Navigate(new Uri("/PinCode.xaml", UriKind.Relative));
-
+                    NavigationService.Navigate(new Uri("/Login.xaml", UriKind.Relative));
                 }
                 catch (Exception ex)
                 {

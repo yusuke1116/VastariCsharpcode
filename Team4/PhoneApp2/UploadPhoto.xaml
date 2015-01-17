@@ -50,6 +50,7 @@
 
             <toolkit:ListPicker x:Name ="Sub" ExpansionMode="FullScreenOnly" FullModeHeader="Full mode Header"  
              CacheMode="BitmapCache" 
+             SelectionChanged="Change2"
              BorderBrush="Black"            
              Background="{x:Null}" Foreground="Black" FontFamily="Segoe WP"  FontSize="22" Width="428" HorizontalAlignment="Left" Margin="12,343,0,81" Grid.RowSpan="2" >
                 <toolkit:ListPicker.Header>
@@ -62,7 +63,7 @@
                     <SolidColorBrush Color="{StaticResource VBox}"/>
                 </TextBox.Background>
             </TextBox>
-            <TextBox x:Name="Title_Copy" HorizontalAlignment="Left" Height="72" Margin="0,561,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato" FontSize="23" Grid.RowSpan="2">
+            <TextBox x:Name="Artist1" HorizontalAlignment="Left" Height="72" Margin="0,561,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" FontFamily="/PhoneApp2;component/Resources/Lato-Regular.ttf#Lato" FontSize="23" Grid.RowSpan="2">
                 <TextBox.Background>
                     <SolidColorBrush Color="{StaticResource VBox}"/>
                 </TextBox.Background>
@@ -93,7 +94,7 @@
             <toolkit:ListPicker x:Name ="Sub2" ExpansionMode="FullScreenOnly" FullModeHeader="Full mode Header"  
             	CacheMode="BitmapCache" 
             	BorderBrush="Black"            
-            	Background="{x:Null}" Foreground="Black" FontFamily="Segoe WP"  FontSize="22" Width="428" HorizontalAlignment="Left" Margin="12,439,0,24" Grid.RowSpan="2" >
+            	Background="{x:Null}" Foreground="Black" FontFamily="Segoe WP"  FontSize="22" Width="428" HorizontalAlignment="Left" Margin="12,439,0,54" Grid.RowSpan="2" >
                 <toolkit:ListPicker.Header>
                     <TextBlock Text="Sub-category2" Foreground="Black" />
                 </toolkit:ListPicker.Header>
